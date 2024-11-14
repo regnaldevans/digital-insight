@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-
-<html data-wf-domain="www.flowngrow.io" data-wf-page="65ade9cf063e092862c122eb" data-wf-site="64d1c3ea445c8af25080401f" lang="en" class=" w-mod-js w-mod-ix w-mod-js" version="4">
+<html lang="en" class=" w-mod-js w-mod-ix w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js" version="4">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <style>
+        .wf-force-outline-none[tabindex="-1"]:focus {
+            outline: none;
+        }
+    </style>
     <title>Digital Insight</title>
-    <meta content="Flow n&#39; Grow™ is an on-demand Webflow maintenance subscription service for small businesses, &amp; Webflow template creators who need updates &amp; fixes fast" name="description">
-    <meta content="Flow n&#39; Grow™ - Webflow Maintenance Services &amp; Template Support" property="og:title">
-    <meta content="Flow n&#39; Grow™ is an on-demand Webflow maintenance subscription service for small businesses, &amp; Webflow template creators who need updates &amp; fixes fast" property="og:description">
-    <meta content="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65b81264c3f74c4709672647_Flow%20n%27%20Grow%20(1).png" property="og:image">
-    <meta content="Flow n&#39; Grow™ - Webflow Maintenance Services &amp; Template Support" property="twitter:title">
-    <meta content="Flow n&#39; Grow™ is an on-demand Webflow maintenance subscription service for small businesses, &amp; Webflow template creators who need updates &amp; fixes fast" property="twitter:description">
-    <meta content="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65b81264c3f74c4709672647_Flow%20n%27%20Grow%20(1).png" property="twitter:image">
-    <meta property="og:type" content="website">
-    <meta content="summary_large_image" name="twitter:card">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="3K8N83JoYtG_exCkefUWWPTOOOApIyyLvsQOoqKPu9c" name="google-site-verification">
     <link href="./index_files/flowngrow.webflow.fb7933d31.min.css" rel="stylesheet" type="text/css">
@@ -60,6 +57,10 @@
             }
         }
     </style>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TX7Q3BLF"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TX7Q3BLF"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TX7Q3BLF"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TX7Q3BLF"></script>
     <script async="" src="./index_files/gtm.js.download"></script>
     <script type="text/javascript" async="" src="./index_files/js"></script>
     <script async="" src="./index_files/gtm(1).js.download"></script>
@@ -70,9 +71,6 @@
             n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
     </script>
-    <link href="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/651dc73bdb03a9cdf58ef372_Favicon%20(1).png" rel="shortcut icon" type="image/x-icon">
-    <link href="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/651dc7728bdaacfeae8075e0_Webclip.png" rel="apple-touch-icon">
-    <link href="https://www.flowngrow.io/" rel="canonical">
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             function setFontSize() {
@@ -125,7 +123,6 @@
         }
     </style>
 
-    <!-- [Webflow Friendly Components by Francesco Castronuovo] Infinite Marquee With Stop On Hover -->
     <link href="./index_files/style.min.css" rel="stylesheet" type="text/css">
     <script async="" src="./index_files/script.js.download"></script>
 
@@ -2954,9 +2951,1417 @@
             display: none!important
         }
     </style>
+    <style>
+        @charset "UTF-8";
+        @keyframes plyr-progress {
+            to {
+                background-position: 25px 0;
+                background-position: var(--plyr-progress-loading-size, 25px) 0
+            }
+        }
+        
+        @keyframes plyr-popup {
+            0% {
+                opacity: .5;
+                transform: translateY(10px)
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+        
+        @keyframes plyr-fade-in {
+            0% {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        .plyr {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            align-items: center;
+            direction: ltr;
+            display: flex;
+            flex-direction: column;
+            font-family: inherit;
+            font-family: var(--plyr-font-family, inherit);
+            font-variant-numeric: tabular-nums;
+            font-weight: 400;
+            font-weight: var(--plyr-font-weight-regular, 400);
+            line-height: 1.7;
+            line-height: var(--plyr-line-height, 1.7);
+            max-width: 100%;
+            min-width: 200px;
+            position: relative;
+            text-shadow: none;
+            transition: box-shadow .3s ease;
+            z-index: 0
+        }
+        
+        .plyr audio,
+        .plyr iframe,
+        .plyr video {
+            display: block;
+            height: 100%;
+            width: 100%
+        }
+        
+        .plyr button {
+            font: inherit;
+            line-height: inherit;
+            width: auto
+        }
+        
+        .plyr:focus {
+            outline: 0
+        }
+        
+        .plyr--full-ui {
+            box-sizing: border-box
+        }
+        
+        .plyr--full-ui *,
+        .plyr--full-ui :after,
+        .plyr--full-ui :before {
+            box-sizing: inherit
+        }
+        
+        .plyr--full-ui a,
+        .plyr--full-ui button,
+        .plyr--full-ui input,
+        .plyr--full-ui label {
+            touch-action: manipulation
+        }
+        
+        .plyr__badge {
+            background: #4a5464;
+            background: var(--plyr-badge-background, #4a5464);
+            border-radius: 2px;
+            border-radius: var(--plyr-badge-border-radius, 2px);
+            color: #fff;
+            color: var(--plyr-badge-text-color, #fff);
+            font-size: 9px;
+            font-size: var(--plyr-font-size-badge, 9px);
+            line-height: 1;
+            padding: 3px 4px
+        }
+        
+        .plyr--full-ui ::-webkit-media-text-track-container {
+            display: none
+        }
+        
+        .plyr__captions {
+            animation: plyr-fade-in .3s ease;
+            bottom: 0;
+            display: none;
+            font-size: 13px;
+            font-size: var(--plyr-font-size-small, 13px);
+            left: 0;
+            padding: 10px;
+            padding: var(--plyr-control-spacing, 10px);
+            position: absolute;
+            text-align: center;
+            transition: transform .4s ease-in-out;
+            width: 100%
+        }
+        
+        .plyr__captions span:empty {
+            display: none
+        }
+        
+        @media (min-width:480px) {
+            .plyr__captions {
+                font-size: 15px;
+                font-size: var(--plyr-font-size-base, 15px);
+                padding: 20px;
+                padding: calc(var(--plyr-control-spacing, 10px)*2)
+            }
+        }
+        
+        @media (min-width:768px) {
+            .plyr__captions {
+                font-size: 18px;
+                font-size: var(--plyr-font-size-large, 18px)
+            }
+        }
+        
+        .plyr--captions-active .plyr__captions {
+            display: block
+        }
+        
+        .plyr:not(.plyr--hide-controls) .plyr__controls:not(:empty)~.plyr__captions {
+            transform: translateY(-40px);
+            transform: translateY(calc(var(--plyr-control-spacing, 10px)*-4))
+        }
+        
+        .plyr__caption {
+            background: #000c;
+            background: var(--plyr-captions-background, #000c);
+            border-radius: 2px;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            color: #fff;
+            color: var(--plyr-captions-text-color, #fff);
+            line-height: 185%;
+            padding: .2em .5em;
+            white-space: pre-wrap
+        }
+        
+        .plyr__caption div {
+            display: inline
+        }
+        
+        .plyr__control {
+            background: #0000;
+            border: 0;
+            border-radius: 4px;
+            border-radius: var(--plyr-control-radius, 4px);
+            color: inherit;
+            cursor: pointer;
+            flex-shrink: 0;
+            overflow: visible;
+            padding: 7px;
+            padding: calc(var(--plyr-control-spacing, 10px)*.7);
+            position: relative;
+            transition: all .3s ease
+        }
+        
+        .plyr__control svg {
+            fill: currentColor;
+            display: block;
+            height: 18px;
+            height: var(--plyr-control-icon-size, 18px);
+            pointer-events: none;
+            width: 18px;
+            width: var(--plyr-control-icon-size, 18px)
+        }
+        
+        .plyr__control:focus {
+            outline: 0
+        }
+        
+        .plyr__control:focus-visible {
+            outline: 2px dashed #00b2ff;
+            outline: 2px dashed var(--plyr-focus-visible-color, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            outline-offset: 2px
+        }
+        
+        a.plyr__control {
+            text-decoration: none
+        }
+        
+        .plyr__control.plyr__control--pressed .icon--not-pressed,
+        .plyr__control.plyr__control--pressed .label--not-pressed,
+        .plyr__control:not(.plyr__control--pressed) .icon--pressed,
+        .plyr__control:not(.plyr__control--pressed) .label--pressed,
+        a.plyr__control:after,
+        a.plyr__control:before {
+            display: none
+        }
+        
+        .plyr--full-ui ::-webkit-media-controls {
+            display: none
+        }
+        
+        .plyr__controls {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            text-align: center
+        }
+        
+        .plyr__controls .plyr__progress__container {
+            flex: 1;
+            min-width: 0
+        }
+        
+        .plyr__controls .plyr__controls__item {
+            margin-left: 2.5px;
+            margin-left: calc(var(--plyr-control-spacing, 10px)/4)
+        }
+        
+        .plyr__controls .plyr__controls__item:first-child {
+            margin-left: 0;
+            margin-right: auto
+        }
+        
+        .plyr__controls .plyr__controls__item.plyr__progress__container {
+            padding-left: 2.5px;
+            padding-left: calc(var(--plyr-control-spacing, 10px)/4)
+        }
+        
+        .plyr__controls .plyr__controls__item.plyr__time {
+            padding: 0 5px;
+            padding: 0 calc(var(--plyr-control-spacing, 10px)/2)
+        }
+        
+        .plyr__controls .plyr__controls__item.plyr__progress__container:first-child,
+        .plyr__controls .plyr__controls__item.plyr__time+.plyr__time,
+        .plyr__controls .plyr__controls__item.plyr__time:first-child {
+            padding-left: 0
+        }
+        
+        .plyr [data-plyr=airplay],
+        .plyr [data-plyr=captions],
+        .plyr [data-plyr=fullscreen],
+        .plyr [data-plyr=pip],
+        .plyr__controls:empty {
+            display: none
+        }
+        
+        .plyr--airplay-supported [data-plyr=airplay],
+        .plyr--captions-enabled [data-plyr=captions],
+        .plyr--fullscreen-enabled [data-plyr=fullscreen],
+        .plyr--pip-supported [data-plyr=pip] {
+            display: inline-block
+        }
+        
+        .plyr__menu {
+            display: flex;
+            position: relative
+        }
+        
+        .plyr__menu .plyr__control svg {
+            transition: transform .3s ease
+        }
+        
+        .plyr__menu .plyr__control[aria-expanded=true] svg {
+            transform: rotate(90deg)
+        }
+        
+        .plyr__menu .plyr__control[aria-expanded=true] .plyr__tooltip {
+            display: none
+        }
+        
+        .plyr__menu__container {
+            animation: plyr-popup .2s ease;
+            background: #ffffffe6;
+            background: var(--plyr-menu-background, #ffffffe6);
+            border-radius: 8px;
+            border-radius: var(--plyr-menu-radius, 8px);
+            bottom: 100%;
+            box-shadow: 0 1px 2px #00000026;
+            box-shadow: var(--plyr-menu-shadow, 0 1px 2px #00000026);
+            color: #4a5464;
+            color: var(--plyr-menu-color, #4a5464);
+            font-size: 15px;
+            font-size: var(--plyr-font-size-base, 15px);
+            margin-bottom: 10px;
+            position: absolute;
+            right: -3px;
+            text-align: left;
+            white-space: nowrap;
+            z-index: 3
+        }
+        
+        .plyr__menu__container>div {
+            overflow: hidden;
+            transition: height .35s cubic-bezier(.4, 0, .2, 1), width .35s cubic-bezier(.4, 0, .2, 1)
+        }
+        
+        .plyr__menu__container:after {
+            border: 4px solid #0000;
+            border-top-color: #ffffffe6;
+            border: var(--plyr-menu-arrow-size, 4px) solid #0000;
+            border-top-color: var(--plyr-menu-background, #ffffffe6);
+            content: "";
+            height: 0;
+            position: absolute;
+            right: 14px;
+            right: calc(var(--plyr-control-icon-size, 18px)/2 + var(--plyr-control-spacing, 10px)*.7 - var(--plyr-menu-arrow-size, 4px)/2);
+            top: 100%;
+            width: 0
+        }
+        
+        .plyr__menu__container [role=menu] {
+            padding: 7px;
+            padding: calc(var(--plyr-control-spacing, 10px)*.7)
+        }
+        
+        .plyr__menu__container [role=menuitem],
+        .plyr__menu__container [role=menuitemradio] {
+            margin-top: 2px
+        }
+        
+        .plyr__menu__container [role=menuitem]:first-child,
+        .plyr__menu__container [role=menuitemradio]:first-child {
+            margin-top: 0
+        }
+        
+        .plyr__menu__container .plyr__control {
+            align-items: center;
+            color: #4a5464;
+            color: var(--plyr-menu-color, #4a5464);
+            display: flex;
+            font-size: 13px;
+            font-size: var(--plyr-font-size-menu, var(--plyr-font-size-small, 13px));
+            padding: 4.66667px 10.5px;
+            padding: calc(var(--plyr-control-spacing, 10px)*.7/1.5) calc(var(--plyr-control-spacing, 10px)*.7*1.5);
+            -webkit-user-select: none;
+            user-select: none;
+            width: 100%
+        }
+        
+        .plyr__menu__container .plyr__control>span {
+            align-items: inherit;
+            display: flex;
+            width: 100%
+        }
+        
+        .plyr__menu__container .plyr__control:after {
+            border: 4px solid #0000;
+            border: var(--plyr-menu-item-arrow-size, 4px) solid #0000;
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+        
+        .plyr__menu__container .plyr__control--forward {
+            padding-right: 28px;
+            padding-right: calc(var(--plyr-control-spacing, 10px)*.7*4)
+        }
+        
+        .plyr__menu__container .plyr__control--forward:after {
+            border-left-color: #728197;
+            border-left-color: var(--plyr-menu-arrow-color, #728197);
+            right: 6.5px;
+            right: calc(var(--plyr-control-spacing, 10px)*.7*1.5 - var(--plyr-menu-item-arrow-size, 4px))
+        }
+        
+        .plyr__menu__container .plyr__control--forward:focus-visible:after,
+        .plyr__menu__container .plyr__control--forward:hover:after {
+            border-left-color: initial
+        }
+        
+        .plyr__menu__container .plyr__control--back {
+            font-weight: 400;
+            font-weight: var(--plyr-font-weight-regular, 400);
+            margin: 7px;
+            margin: calc(var(--plyr-control-spacing, 10px)*.7);
+            margin-bottom: 3.5px;
+            margin-bottom: calc(var(--plyr-control-spacing, 10px)*.7/2);
+            padding-left: 28px;
+            padding-left: calc(var(--plyr-control-spacing, 10px)*.7*4);
+            position: relative;
+            width: calc(100% - 14px);
+            width: calc(100% - var(--plyr-control-spacing, 10px)*.7*2)
+        }
+        
+        .plyr__menu__container .plyr__control--back:after {
+            border-right-color: #728197;
+            border-right-color: var(--plyr-menu-arrow-color, #728197);
+            left: 6.5px;
+            left: calc(var(--plyr-control-spacing, 10px)*.7*1.5 - var(--plyr-menu-item-arrow-size, 4px))
+        }
+        
+        .plyr__menu__container .plyr__control--back:before {
+            background: #dcdfe5;
+            background: var(--plyr-menu-back-border-color, #dcdfe5);
+            box-shadow: 0 1px 0 #fff;
+            box-shadow: 0 1px 0 var(--plyr-menu-back-border-shadow-color, #fff);
+            content: "";
+            height: 1px;
+            left: 0;
+            margin-top: 3.5px;
+            margin-top: calc(var(--plyr-control-spacing, 10px)*.7/2);
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 100%
+        }
+        
+        .plyr__menu__container .plyr__control--back:focus-visible:after,
+        .plyr__menu__container .plyr__control--back:hover:after {
+            border-right-color: initial
+        }
+        
+        .plyr__menu__container .plyr__control[role=menuitemradio] {
+            padding-left: 7px;
+            padding-left: calc(var(--plyr-control-spacing, 10px)*.7)
+        }
+        
+        .plyr__menu__container .plyr__control[role=menuitemradio]:after,
+        .plyr__menu__container .plyr__control[role=menuitemradio]:before {
+            border-radius: 100%
+        }
+        
+        .plyr__menu__container .plyr__control[role=menuitemradio]:before {
+            background: #0000001a;
+            content: "";
+            display: block;
+            flex-shrink: 0;
+            height: 16px;
+            margin-right: 10px;
+            margin-right: var(--plyr-control-spacing, 10px);
+            transition: all .3s ease;
+            width: 16px
+        }
+        
+        .plyr__menu__container .plyr__control[role=menuitemradio]:after {
+            background: #fff;
+            border: 0;
+            height: 6px;
+            left: 12px;
+            opacity: 0;
+            top: 50%;
+            transform: translateY(-50%) scale(0);
+            transition: transform .3s ease, opacity .3s ease;
+            width: 6px
+        }
+        
+        .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:before {
+            background: #00b2ff;
+            background: var(--plyr-control-toggle-checked-background, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)))
+        }
+        
+        .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:after {
+            opacity: 1;
+            transform: translateY(-50%) scale(1)
+        }
+        
+        .plyr__menu__container .plyr__control[role=menuitemradio]:focus-visible:before,
+        .plyr__menu__container .plyr__control[role=menuitemradio]:hover:before {
+            background: #23282f1a
+        }
+        
+        .plyr__menu__container .plyr__menu__value {
+            align-items: center;
+            display: flex;
+            margin-left: auto;
+            margin-right: -5px;
+            margin-right: calc(var(--plyr-control-spacing, 10px)*.7*-1 - -2px);
+            overflow: hidden;
+            padding-left: 24.5px;
+            padding-left: calc(var(--plyr-control-spacing, 10px)*.7*3.5);
+            pointer-events: none
+        }
+        
+        .plyr--full-ui input[type=range] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: #0000;
+            border: 0;
+            border-radius: 26px;
+            border-radius: calc(var(--plyr-range-thumb-height, 13px)*2);
+            color: #00b2ff;
+            color: var(--plyr-range-fill-background, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            display: block;
+            height: 19px;
+            height: calc(var(--plyr-range-thumb-active-shadow-width, 3px)*2 + var(--plyr-range-thumb-height, 13px));
+            margin: 0;
+            min-width: 0;
+            padding: 0;
+            transition: box-shadow .3s ease;
+            width: 100%
+        }
+        
+        .plyr--full-ui input[type=range]::-webkit-slider-runnable-track {
+            background: #0000;
+            background-image: linear-gradient(90deg, currentColor 0, #0000 0);
+            background-image: linear-gradient(to right, currentColor var(--value, 0), #0000 var(--value, 0));
+            border: 0;
+            border-radius: 2.5px;
+            border-radius: calc(var(--plyr-range-track-height, 5px)/2);
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px);
+            -webkit-transition: box-shadow .3s ease;
+            transition: box-shadow .3s ease;
+            -webkit-user-select: none;
+            user-select: none
+        }
+        
+        .plyr--full-ui input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            background: #fff;
+            background: var(--plyr-range-thumb-background, #fff);
+            border: 0;
+            border-radius: 100%;
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33);
+            height: 13px;
+            height: var(--plyr-range-thumb-height, 13px);
+            margin-top: -4px;
+            margin-top: calc((var(--plyr-range-thumb-height, 13px) - var(--plyr-range-track-height, 5px))/2*-1);
+            position: relative;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            width: 13px;
+            width: var(--plyr-range-thumb-height, 13px)
+        }
+        
+        .plyr--full-ui input[type=range]::-moz-range-track {
+            background: #0000;
+            border: 0;
+            border-radius: 2.5px;
+            border-radius: calc(var(--plyr-range-track-height, 5px)/2);
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px);
+            -moz-transition: box-shadow .3s ease;
+            transition: box-shadow .3s ease;
+            user-select: none
+        }
+        
+        .plyr--full-ui input[type=range]::-moz-range-thumb {
+            background: #fff;
+            background: var(--plyr-range-thumb-background, #fff);
+            border: 0;
+            border-radius: 100%;
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33);
+            height: 13px;
+            height: var(--plyr-range-thumb-height, 13px);
+            position: relative;
+            -moz-transition: all .2s ease;
+            transition: all .2s ease;
+            width: 13px;
+            width: var(--plyr-range-thumb-height, 13px)
+        }
+        
+        .plyr--full-ui input[type=range]::-moz-range-progress {
+            background: currentColor;
+            border-radius: 2.5px;
+            border-radius: calc(var(--plyr-range-track-height, 5px)/2);
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px)
+        }
+        
+        .plyr--full-ui input[type=range]::-ms-track {
+            color: #0000
+        }
+        
+        .plyr--full-ui input[type=range]::-ms-fill-upper,
+        .plyr--full-ui input[type=range]::-ms-track {
+            background: #0000;
+            border: 0;
+            border-radius: 2.5px;
+            border-radius: calc(var(--plyr-range-track-height, 5px)/2);
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px);
+            -ms-transition: box-shadow .3s ease;
+            transition: box-shadow .3s ease;
+            user-select: none
+        }
+        
+        .plyr--full-ui input[type=range]::-ms-fill-lower {
+            background: #0000;
+            background: currentColor;
+            border: 0;
+            border-radius: 2.5px;
+            border-radius: calc(var(--plyr-range-track-height, 5px)/2);
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px);
+            -ms-transition: box-shadow .3s ease;
+            transition: box-shadow .3s ease;
+            user-select: none
+        }
+        
+        .plyr--full-ui input[type=range]::-ms-thumb {
+            background: #fff;
+            background: var(--plyr-range-thumb-background, #fff);
+            border: 0;
+            border-radius: 100%;
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33);
+            height: 13px;
+            height: var(--plyr-range-thumb-height, 13px);
+            margin-top: 0;
+            position: relative;
+            -ms-transition: all .2s ease;
+            transition: all .2s ease;
+            width: 13px;
+            width: var(--plyr-range-thumb-height, 13px)
+        }
+        
+        .plyr--full-ui input[type=range]::-ms-tooltip {
+            display: none
+        }
+        
+        .plyr--full-ui input[type=range]::-moz-focus-outer {
+            border: 0
+        }
+        
+        .plyr--full-ui input[type=range]:focus {
+            outline: 0
+        }
+        
+        .plyr--full-ui input[type=range]:focus-visible::-webkit-slider-runnable-track {
+            outline: 2px dashed #00b2ff;
+            outline: 2px dashed var(--plyr-focus-visible-color, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            outline-offset: 2px
+        }
+        
+        .plyr--full-ui input[type=range]:focus-visible::-moz-range-track {
+            outline: 2px dashed #00b2ff;
+            outline: 2px dashed var(--plyr-focus-visible-color, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            outline-offset: 2px
+        }
+        
+        .plyr--full-ui input[type=range]:focus-visible::-ms-track {
+            outline: 2px dashed #00b2ff;
+            outline: 2px dashed var(--plyr-focus-visible-color, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            outline-offset: 2px
+        }
+        
+        .plyr__poster {
+            background-color: #000;
+            background-color: var(--plyr-video-background, var(--plyr-video-background, #000));
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            transition: opacity .2s ease;
+            width: 100%;
+            z-index: 1
+        }
+        
+        .plyr--stopped.plyr__poster-enabled .plyr__poster {
+            opacity: 1
+        }
+        
+        .plyr--youtube.plyr--paused.plyr__poster-enabled:not(.plyr--stopped) .plyr__poster {
+            display: none
+        }
+        
+        .plyr__time {
+            font-size: 13px;
+            font-size: var(--plyr-font-size-time, var(--plyr-font-size-small, 13px))
+        }
+        
+        .plyr__time+.plyr__time:before {
+            content: "⁄";
+            margin-right: 10px;
+            margin-right: var(--plyr-control-spacing, 10px)
+        }
+        
+        @media (max-width:767px) {
+            .plyr__time+.plyr__time {
+                display: none
+            }
+        }
+        
+        .plyr__tooltip {
+            background: #fff;
+            background: var(--plyr-tooltip-background, #fff);
+            border-radius: 5px;
+            border-radius: var(--plyr-tooltip-radius, 5px);
+            bottom: 100%;
+            box-shadow: 0 1px 2px #00000026;
+            box-shadow: var(--plyr-tooltip-shadow, 0 1px 2px #00000026);
+            color: #4a5464;
+            color: var(--plyr-tooltip-color, #4a5464);
+            font-size: 13px;
+            font-size: var(--plyr-font-size-small, 13px);
+            font-weight: 400;
+            font-weight: var(--plyr-font-weight-regular, 400);
+            left: 50%;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            margin-bottom: calc(var(--plyr-control-spacing, 10px)/2*2);
+            opacity: 0;
+            padding: 5px 7.5px;
+            padding: calc(var(--plyr-control-spacing, 10px)/2) calc(var(--plyr-control-spacing, 10px)/2*1.5);
+            pointer-events: none;
+            position: absolute;
+            transform: translate(-50%, 10px) scale(.8);
+            transform-origin: 50% 100%;
+            transition: transform .2s ease .1s, opacity .2s ease .1s;
+            white-space: nowrap;
+            z-index: 2
+        }
+        
+        .plyr__tooltip:before {
+            border-left: 4px solid #0000;
+            border-left: var(--plyr-tooltip-arrow-size, 4px) solid #0000;
+            border-right: 4px solid #0000;
+            border-right: var(--plyr-tooltip-arrow-size, 4px) solid #0000;
+            border-top: 4px solid #fff;
+            border-top: var(--plyr-tooltip-arrow-size, 4px) solid var(--plyr-tooltip-background, #fff);
+            bottom: -4px;
+            bottom: calc(var(--plyr-tooltip-arrow-size, 4px)*-1);
+            content: "";
+            height: 0;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 0;
+            z-index: 2
+        }
+        
+        .plyr .plyr__control:focus-visible .plyr__tooltip,
+        .plyr .plyr__control:hover .plyr__tooltip,
+        .plyr__tooltip--visible {
+            opacity: 1;
+            transform: translate(-50%) scale(1)
+        }
+        
+        .plyr .plyr__control:hover .plyr__tooltip {
+            z-index: 3
+        }
+        
+        .plyr__controls>.plyr__control:first-child .plyr__tooltip,
+        .plyr__controls>.plyr__control:first-child+.plyr__control .plyr__tooltip {
+            left: 0;
+            transform: translateY(10px) scale(.8);
+            transform-origin: 0 100%
+        }
+        
+        .plyr__controls>.plyr__control:first-child .plyr__tooltip:before,
+        .plyr__controls>.plyr__control:first-child+.plyr__control .plyr__tooltip:before {
+            left: 16px;
+            left: calc(var(--plyr-control-icon-size, 18px)/2 + var(--plyr-control-spacing, 10px)*.7)
+        }
+        
+        .plyr__controls>.plyr__control:last-child .plyr__tooltip {
+            left: auto;
+            right: 0;
+            transform: translateY(10px) scale(.8);
+            transform-origin: 100% 100%
+        }
+        
+        .plyr__controls>.plyr__control:last-child .plyr__tooltip:before {
+            left: auto;
+            right: 16px;
+            right: calc(var(--plyr-control-icon-size, 18px)/2 + var(--plyr-control-spacing, 10px)*.7);
+            transform: translateX(50%)
+        }
+        
+        .plyr__controls>.plyr__control:first-child .plyr__tooltip--visible,
+        .plyr__controls>.plyr__control:first-child+.plyr__control .plyr__tooltip--visible,
+        .plyr__controls>.plyr__control:first-child+.plyr__control:focus-visible .plyr__tooltip,
+        .plyr__controls>.plyr__control:first-child+.plyr__control:hover .plyr__tooltip,
+        .plyr__controls>.plyr__control:first-child:focus-visible .plyr__tooltip,
+        .plyr__controls>.plyr__control:first-child:hover .plyr__tooltip,
+        .plyr__controls>.plyr__control:last-child .plyr__tooltip--visible,
+        .plyr__controls>.plyr__control:last-child:focus-visible .plyr__tooltip,
+        .plyr__controls>.plyr__control:last-child:hover .plyr__tooltip {
+            transform: translate(0) scale(1)
+        }
+        
+        .plyr__progress {
+            left: 6.5px;
+            left: calc(var(--plyr-range-thumb-height, 13px)*.5);
+            margin-right: 13px;
+            margin-right: var(--plyr-range-thumb-height, 13px);
+            position: relative
+        }
+        
+        .plyr__progress input[type=range],
+        .plyr__progress__buffer {
+            margin-left: -6.5px;
+            margin-left: calc(var(--plyr-range-thumb-height, 13px)*-.5);
+            margin-right: -6.5px;
+            margin-right: calc(var(--plyr-range-thumb-height, 13px)*-.5);
+            width: calc(100% + 13px);
+            width: calc(100% + var(--plyr-range-thumb-height, 13px))
+        }
+        
+        .plyr__progress input[type=range] {
+            position: relative;
+            z-index: 2
+        }
+        
+        .plyr__progress .plyr__tooltip {
+            left: 0;
+            max-width: 120px;
+            overflow-wrap: break-word
+        }
+        
+        .plyr__progress__buffer {
+            -webkit-appearance: none;
+            background: #0000;
+            border: 0;
+            border-radius: 100px;
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px);
+            left: 0;
+            margin-top: -2.5px;
+            margin-top: calc((var(--plyr-range-track-height, 5px)/2)*-1);
+            padding: 0;
+            position: absolute;
+            top: 50%
+        }
+        
+        .plyr__progress__buffer::-webkit-progress-bar {
+            background: #0000
+        }
+        
+        .plyr__progress__buffer::-webkit-progress-value {
+            background: currentColor;
+            border-radius: 100px;
+            min-width: 5px;
+            min-width: var(--plyr-range-track-height, 5px);
+            -webkit-transition: width .2s ease;
+            transition: width .2s ease
+        }
+        
+        .plyr__progress__buffer::-moz-progress-bar {
+            background: currentColor;
+            border-radius: 100px;
+            min-width: 5px;
+            min-width: var(--plyr-range-track-height, 5px);
+            -moz-transition: width .2s ease;
+            transition: width .2s ease
+        }
+        
+        .plyr__progress__buffer::-ms-fill {
+            border-radius: 100px;
+            -ms-transition: width .2s ease;
+            transition: width .2s ease
+        }
+        
+        .plyr--loading .plyr__progress__buffer {
+            animation: plyr-progress 1s linear infinite;
+            background-image: linear-gradient(-45deg, #23282f99 25%, #0000 0, #0000 50%, #23282f99 0, #23282f99 75%, #0000 0, #0000);
+            background-image: linear-gradient(-45deg, var(--plyr-progress-loading-background, #23282f99) 25%, #0000 25%, #0000 50%, var(--plyr-progress-loading-background, #23282f99) 50%, var(--plyr-progress-loading-background, #23282f99) 75%, #0000 75%, #0000);
+            background-repeat: repeat-x;
+            background-size: 25px 25px;
+            background-size: var(--plyr-progress-loading-size, 25px) var(--plyr-progress-loading-size, 25px);
+            color: #0000
+        }
+        
+        .plyr--video.plyr--loading .plyr__progress__buffer {
+            background-color: #ffffff40;
+            background-color: var(--plyr-video-progress-buffered-background, #ffffff40)
+        }
+        
+        .plyr--audio.plyr--loading .plyr__progress__buffer {
+            background-color: #c1c8d199;
+            background-color: var(--plyr-audio-progress-buffered-background, #c1c8d199)
+        }
+        
+        .plyr__progress__marker {
+            background-color: #fff;
+            background-color: var(--plyr-progress-marker-background, #fff);
+            border-radius: 1px;
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px);
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 3px;
+            width: var(--plyr-progress-marker-width, 3px);
+            z-index: 3
+        }
+        
+        .plyr__volume {
+            align-items: center;
+            display: flex;
+            position: relative
+        }
+        
+        .plyr__volume input[type=range] {
+            margin-left: 5px;
+            margin-left: calc(var(--plyr-control-spacing, 10px)/2);
+            margin-right: 5px;
+            margin-right: calc(var(--plyr-control-spacing, 10px)/2);
+            max-width: 90px;
+            min-width: 60px;
+            position: relative;
+            z-index: 2
+        }
+        
+        .plyr--audio {
+            display: block
+        }
+        
+        .plyr--audio .plyr__controls {
+            background: #fff;
+            background: var(--plyr-audio-controls-background, #fff);
+            border-radius: inherit;
+            color: #4a5464;
+            color: var(--plyr-audio-control-color, #4a5464);
+            padding: 10px;
+            padding: var(--plyr-control-spacing, 10px)
+        }
+        
+        .plyr--audio .plyr__control:focus-visible,
+        .plyr--audio .plyr__control:hover,
+        .plyr--audio .plyr__control[aria-expanded=true] {
+            background: #00b2ff;
+            background: var(--plyr-audio-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            color: #fff;
+            color: var(--plyr-audio-control-color-hover, #fff)
+        }
+        
+        .plyr--full-ui.plyr--audio input[type=range]::-webkit-slider-runnable-track {
+            background-color: #c1c8d199;
+            background-color: var(--plyr-audio-range-track-background, var(--plyr-audio-progress-buffered-background, #c1c8d199))
+        }
+        
+        .plyr--full-ui.plyr--audio input[type=range]::-moz-range-track {
+            background-color: #c1c8d199;
+            background-color: var(--plyr-audio-range-track-background, var(--plyr-audio-progress-buffered-background, #c1c8d199))
+        }
+        
+        .plyr--full-ui.plyr--audio input[type=range]::-ms-track {
+            background-color: #c1c8d199;
+            background-color: var(--plyr-audio-range-track-background, var(--plyr-audio-progress-buffered-background, #c1c8d199))
+        }
+        
+        .plyr--full-ui.plyr--audio input[type=range]:active::-webkit-slider-thumb {
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33, 0 0 0 3px #23282f1a;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33), 0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px) var(--plyr-audio-range-thumb-active-shadow-color, #23282f1a)
+        }
+        
+        .plyr--full-ui.plyr--audio input[type=range]:active::-moz-range-thumb {
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33, 0 0 0 3px #23282f1a;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33), 0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px) var(--plyr-audio-range-thumb-active-shadow-color, #23282f1a)
+        }
+        
+        .plyr--full-ui.plyr--audio input[type=range]:active::-ms-thumb {
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33, 0 0 0 3px #23282f1a;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33), 0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px) var(--plyr-audio-range-thumb-active-shadow-color, #23282f1a)
+        }
+        
+        .plyr--audio .plyr__progress__buffer {
+            color: #c1c8d199;
+            color: var(--plyr-audio-progress-buffered-background, #c1c8d199)
+        }
+        
+        .plyr--video {
+            overflow: hidden
+        }
+        
+        .plyr--video.plyr--menu-open {
+            overflow: visible
+        }
+        
+        .plyr__video-wrapper {
+            background: #000;
+            background: var(--plyr-video-background, var(--plyr-video-background, #000));
+            border-radius: inherit;
+            height: 100%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            width: 100%
+        }
+        
+        .plyr__video-embed,
+        .plyr__video-wrapper--fixed-ratio {
+            aspect-ratio: 16/9
+        }
+        
+        @supports not (aspect-ratio:16/9) {
+            .plyr__video-embed,
+            .plyr__video-wrapper--fixed-ratio {
+                height: 0;
+                padding-bottom: 56.25%;
+                position: relative
+            }
+        }
+        
+        .plyr__video-embed iframe,
+        .plyr__video-wrapper--fixed-ratio video {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+        
+        .plyr--full-ui .plyr__video-embed>.plyr__video-embed__container {
+            padding-bottom: 240%;
+            position: relative;
+            transform: translateY(-38.28125%)
+        }
+        
+        .plyr--video .plyr__controls {
+            background: linear-gradient(#0000, #000000bf);
+            background: var(--plyr-video-controls-background, linear-gradient(#0000, #000000bf));
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+            bottom: 0;
+            color: #fff;
+            color: var(--plyr-video-control-color, #fff);
+            left: 0;
+            padding: 5px;
+            padding: calc(var(--plyr-control-spacing, 10px)/2);
+            padding-top: 20px;
+            padding-top: calc(var(--plyr-control-spacing, 10px)*2);
+            position: absolute;
+            right: 0;
+            transition: opacity .4s ease-in-out, transform .4s ease-in-out;
+            z-index: 3
+        }
+        
+        @media (min-width:480px) {
+            .plyr--video .plyr__controls {
+                padding: 10px;
+                padding: var(--plyr-control-spacing, 10px);
+                padding-top: 35px;
+                padding-top: calc(var(--plyr-control-spacing, 10px)*3.5)
+            }
+        }
+        
+        .plyr--video.plyr--hide-controls .plyr__controls {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(100%)
+        }
+        
+        .plyr--video .plyr__control:focus-visible,
+        .plyr--video .plyr__control:hover,
+        .plyr--video .plyr__control[aria-expanded=true] {
+            background: #00b2ff;
+            background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            color: #fff;
+            color: var(--plyr-video-control-color-hover, #fff)
+        }
+        
+        .plyr__control--overlaid {
+            background: #00b2ff;
+            background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #00b2ff)));
+            border: 0;
+            border-radius: 100%;
+            color: #fff;
+            color: var(--plyr-video-control-color, #fff);
+            display: none;
+            left: 50%;
+            opacity: .9;
+            padding: 15px;
+            padding: calc(var(--plyr-control-spacing, 10px)*1.5);
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s;
+            z-index: 2
+        }
+        
+        .plyr__control--overlaid svg {
+            left: 2px;
+            position: relative
+        }
+        
+        .plyr__control--overlaid:focus,
+        .plyr__control--overlaid:hover {
+            opacity: 1
+        }
+        
+        .plyr--playing .plyr__control--overlaid {
+            opacity: 0;
+            visibility: hidden
+        }
+        
+        .plyr--full-ui.plyr--video .plyr__control--overlaid {
+            display: block
+        }
+        
+        .plyr--full-ui.plyr--video input[type=range]::-webkit-slider-runnable-track {
+            background-color: #ffffff40;
+            background-color: var(--plyr-video-range-track-background, var(--plyr-video-progress-buffered-background, #ffffff40))
+        }
+        
+        .plyr--full-ui.plyr--video input[type=range]::-moz-range-track {
+            background-color: #ffffff40;
+            background-color: var(--plyr-video-range-track-background, var(--plyr-video-progress-buffered-background, #ffffff40))
+        }
+        
+        .plyr--full-ui.plyr--video input[type=range]::-ms-track {
+            background-color: #ffffff40;
+            background-color: var(--plyr-video-range-track-background, var(--plyr-video-progress-buffered-background, #ffffff40))
+        }
+        
+        .plyr--full-ui.plyr--video input[type=range]:active::-webkit-slider-thumb {
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33, 0 0 0 3px #ffffff80;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33), 0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px) var(--plyr-audio-range-thumb-active-shadow-color, #ffffff80)
+        }
+        
+        .plyr--full-ui.plyr--video input[type=range]:active::-moz-range-thumb {
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33, 0 0 0 3px #ffffff80;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33), 0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px) var(--plyr-audio-range-thumb-active-shadow-color, #ffffff80)
+        }
+        
+        .plyr--full-ui.plyr--video input[type=range]:active::-ms-thumb {
+            box-shadow: 0 1px 1px #23282f26, 0 0 0 1px #23282f33, 0 0 0 3px #ffffff80;
+            box-shadow: var(--plyr-range-thumb-shadow, 0 1px 1px #23282f26, 0 0 0 1px #23282f33), 0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px) var(--plyr-audio-range-thumb-active-shadow-color, #ffffff80)
+        }
+        
+        .plyr--video .plyr__progress__buffer {
+            color: #ffffff40;
+            color: var(--plyr-video-progress-buffered-background, #ffffff40)
+        }
+        
+        .plyr:fullscreen {
+            background: #000;
+            border-radius: 0!important;
+            height: 100%;
+            margin: 0;
+            width: 100%
+        }
+        
+        .plyr:fullscreen video {
+            height: 100%
+        }
+        
+        .plyr:fullscreen .plyr__control .icon--exit-fullscreen {
+            display: block
+        }
+        
+        .plyr:fullscreen .plyr__control .icon--exit-fullscreen+svg {
+            display: none
+        }
+        
+        .plyr:fullscreen.plyr--hide-controls {
+            cursor: none
+        }
+        
+        @media (min-width:1024px) {
+            .plyr:fullscreen .plyr__captions {
+                font-size: 21px;
+                font-size: var(--plyr-font-size-xlarge, 21px)
+            }
+        }
+        
+        .plyr--fullscreen-fallback {
+            background: #000;
+            border-radius: 0!important;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            margin: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10000000
+        }
+        
+        .plyr--fullscreen-fallback video {
+            height: 100%
+        }
+        
+        .plyr--fullscreen-fallback .plyr__control .icon--exit-fullscreen {
+            display: block
+        }
+        
+        .plyr--fullscreen-fallback .plyr__control .icon--exit-fullscreen+svg {
+            display: none
+        }
+        
+        .plyr--fullscreen-fallback.plyr--hide-controls {
+            cursor: none
+        }
+        
+        @media (min-width:1024px) {
+            .plyr--fullscreen-fallback .plyr__captions {
+                font-size: 21px;
+                font-size: var(--plyr-font-size-xlarge, 21px)
+            }
+        }
+        
+        .plyr__ads {
+            border-radius: inherit;
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1
+        }
+        
+        .plyr__ads>div,
+        .plyr__ads>div iframe {
+            height: 100%;
+            position: absolute;
+            width: 100%
+        }
+        
+        .plyr__ads:after {
+            background: #23282f;
+            border-radius: 2px;
+            bottom: 10px;
+            bottom: var(--plyr-control-spacing, 10px);
+            color: #fff;
+            content: attr(data-badge-text);
+            font-size: 11px;
+            padding: 2px 6px;
+            pointer-events: none;
+            position: absolute;
+            right: 10px;
+            right: var(--plyr-control-spacing, 10px);
+            z-index: 3
+        }
+        
+        .plyr__ads:empty:after {
+            display: none
+        }
+        
+        .plyr__cues {
+            background: currentColor;
+            display: block;
+            height: 5px;
+            height: var(--plyr-range-track-height, 5px);
+            left: 0;
+            opacity: .8;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            z-index: 3
+        }
+        
+        .plyr__preview-thumb {
+            background-color: #fff;
+            background-color: var(--plyr-tooltip-background, #fff);
+            border-radius: 8px;
+            border-radius: var(--plyr-menu-radius, 8px);
+            bottom: 100%;
+            box-shadow: 0 1px 2px #00000026;
+            box-shadow: var(--plyr-tooltip-shadow, 0 1px 2px #00000026);
+            margin-bottom: 10px;
+            margin-bottom: calc(var(--plyr-control-spacing, 10px)/2*2);
+            opacity: 0;
+            padding: 3px;
+            pointer-events: none;
+            position: absolute;
+            transform: translateY(10px) scale(.8);
+            transform-origin: 50% 100%;
+            transition: transform .2s ease .1s, opacity .2s ease .1s;
+            z-index: 2
+        }
+        
+        .plyr__preview-thumb--is-shown {
+            opacity: 1;
+            transform: translate(0) scale(1)
+        }
+        
+        .plyr__preview-thumb:before {
+            border-left: 4px solid #0000;
+            border-left: var(--plyr-tooltip-arrow-size, 4px) solid #0000;
+            border-right: 4px solid #0000;
+            border-right: var(--plyr-tooltip-arrow-size, 4px) solid #0000;
+            border-top: 4px solid #fff;
+            border-top: var(--plyr-tooltip-arrow-size, 4px) solid var(--plyr-tooltip-background, #fff);
+            bottom: -4px;
+            bottom: calc(var(--plyr-tooltip-arrow-size, 4px)*-1);
+            content: "";
+            height: 0;
+            left: calc(50% + var(--preview-arrow-offset));
+            position: absolute;
+            transform: translateX(-50%);
+            width: 0;
+            z-index: 2
+        }
+        
+        .plyr__preview-thumb__image-container {
+            background: #c1c8d1;
+            border-radius: 7px;
+            border-radius: calc(var(--plyr-menu-radius, 8px) - 1px);
+            overflow: hidden;
+            position: relative;
+            z-index: 0
+        }
+        
+        .plyr__preview-thumb__image-container img,
+        .plyr__preview-thumb__image-container:after {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+        
+        .plyr__preview-thumb__image-container:after {
+            border-radius: inherit;
+            box-shadow: inset 0 0 0 1px #00000026;
+            content: "";
+            pointer-events: none
+        }
+        
+        .plyr__preview-thumb__image-container img {
+            max-height: none;
+            max-width: none
+        }
+        
+        .plyr__preview-thumb__time-container {
+            background: linear-gradient(#0000, #000000bf);
+            background: var(--plyr-video-controls-background, linear-gradient(#0000, #000000bf));
+            border-bottom-left-radius: 7px;
+            border-bottom-left-radius: calc(var(--plyr-menu-radius, 8px) - 1px);
+            border-bottom-right-radius: 7px;
+            border-bottom-right-radius: calc(var(--plyr-menu-radius, 8px) - 1px);
+            bottom: 0;
+            left: 0;
+            line-height: 1.1;
+            padding: 20px 6px 6px;
+            position: absolute;
+            right: 0;
+            z-index: 3
+        }
+        
+        .plyr__preview-thumb__time-container span {
+            color: #fff;
+            font-size: 13px;
+            font-size: var(--plyr-font-size-time, var(--plyr-font-size-small, 13px))
+        }
+        
+        .plyr__preview-scrubbing {
+            bottom: 0;
+            filter: blur(1px);
+            height: 100%;
+            left: 0;
+            margin: auto;
+            opacity: 0;
+            overflow: hidden;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: opacity .3s ease;
+            width: 100%;
+            z-index: 1
+        }
+        
+        .plyr__preview-scrubbing--is-shown {
+            opacity: 1
+        }
+        
+        .plyr__preview-scrubbing img {
+            height: 100%;
+            left: 0;
+            max-height: none;
+            max-width: none;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+        
+        .plyr--no-transition {
+            transition: none!important
+        }
+        
+        .plyr__sr-only {
+            clip: rect(1px, 1px, 1px, 1px);
+            border: 0!important;
+            height: 1px!important;
+            overflow: hidden;
+            padding: 0!important;
+            position: absolute!important;
+            width: 1px!important
+        }
+        
+        .plyr [hidden] {
+            display: none!important
+        }
+    </style>
 </head>
 
-<body style="overflow: auto;">
+<body style="overflow: auto;"><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./index_files/saved_resource.html"></iframe>
     <div class="page-wrapper">
         <div class="global-styles w-embed">
             <style>
@@ -3079,48 +4484,21 @@
                 }
             </style>
         </div>
-        <div fs-scrolldisable-element="when-visible" data-video-lightbox="true" class="lightbox-video-popup">
-            <div class="pop-up-video-wrapper">
-                <div class="pop-up-video"><video data-plyr-config="{&quot;pip&quot;: { &quot;enabled&quot;: false }}" playsinline="false" class="lightbox-video"></video><button data-w-id="17aa57e7-3766-35b5-d66e-18679642585b" data-lightbox-close="true" class="button-2 is-lightbox-close"><div>Close</div><div data-w-id="17aa57e7-3766-35b5-d66e-18679642585e" class="lightbox-close w-embed" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 -960 960 960"><path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg></div></button></div>
-            </div>
-            <div data-lightbox-close="true" class="bg-dark-overlay is-popup"></div>
-        </div>
-        <div class="announcement-bar-wrapper">
-            <div class="annoucement-text">
-                <div class="announcement-text">Looking to finance your solar system? Click here to see our financing options and payback periods.</div>
-                <a data-w-id="9a8201ec-f50d-0237-9390-7e6e0a59595e" href="https://www.flowngrow.io/#" class="announcement-cta w-inline-block">
-                    <div class="announcement-text is-cta">VIEW&nbsp;NOW</div><img src="./index_files/64d1c3ea445c8af25080408a_arrow-right.svg" loading="lazy" alt="Arrow Left" class="arrow-left _1" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></a>
-            </div>
-            <div data-w-id="8ab57b15-962e-b595-ab82-a3d647b8a9a8" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="html-embed-4 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-  <path d="M16.3982 14.8877C16.4811 14.9699 16.5277 15.0818 16.5277 15.1986C16.5277 15.3153 16.4811 15.4272 16.3982 15.5094L15.7853 16.1223C15.7031 16.2052 15.5912 16.2518 15.4744 16.2518C15.3577 16.2518 15.2458 16.2052 15.1636 16.1223L11.276 12.2347L7.38848 16.1223C7.30628 16.2052 7.19438 16.2518 7.07765 16.2518C6.96092 16.2518 6.84902 16.2052 6.76682 16.1223L6.15391 15.5094C6.07103 15.4272 6.02441 15.3153 6.02441 15.1986C6.02441 15.0818 6.07103 14.9699 6.15391 14.8877L10.0415 11.0002L6.15391 7.1126C6.07103 7.0304 6.02441 6.9185 6.02441 6.80177C6.02441 6.68504 6.07103 6.57314 6.15391 6.49094L6.76682 5.87803C6.84902 5.79515 6.96092 5.74854 7.07765 5.74854C7.19438 5.74854 7.30628 5.79515 7.38848 5.87803L11.276 9.7656L15.1636 5.87803C15.2458 5.79515 15.3577 5.74854 15.4744 5.74854C15.5912 5.74854 15.7031 5.79515 15.7853 5.87803L16.3982 6.49094C16.4811 6.57314 16.5277 6.68504 16.5277 6.80177C16.5277 6.9185 16.4811 7.0304 16.3982 7.1126L12.5106 11.0002L16.3982 14.8877Z" fill="#F7F2E8"></path>
-</svg></div>
-        </div>
+
+
         <div data-w-id="6ebb740b-e85a-4c1b-8423-da03142d788a" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar--tablet w-nav">
             <div class="page-padding">
                 <div class="container-1280">
                     <div class="padding-section-24">
                         <div class="nav-menu-wrapper">
-                            <a href="https://www.flowngrow.io/" data-w-id="6ebb740b-e85a-4c1b-8423-da03142d788f" aria-current="page" class="brand w-nav-brand w--current" aria-label="home"><img src="./index_files/64dadc1169dc97eb5c700ba1_Nav-Logo.svg" loading="lazy" alt="" class="nav-logo-5"></a>
-                            <nav role="navigation" class="nav--menu w-nav-menu">
-                                <div class="nav-menu-item-4">
-                                    <div class="page-link-wrapper">
-                                        <div class="margin-link--nav"><a href="https://www.flowngrow.io/#mobile-process" id="process" class="text-link-nav-4">How It Works</a></div>
-                                        <div class="margin-link--nav"><a href="https://www.flowngrow.io/#mobile-tech-stack" id="services" class="text-link-nav-4">Services</a></div>
-                                        <div class="margin-link--nav"><a href="https://www.flowngrow.io/#mobile-plans" id="plans" class="text-link-nav-4">Pricing</a></div>
-                                        <div class="margin-link--nav"><a href="https://www.flowngrow.io/#section-benefits" id="benefits-link" class="text-link-nav-4">Benefits</a></div>
-                                        <div class="margin-link--nav"><a href="https://www.flowngrow.io/#mobile-faq" id="faqs" class="text-link-nav-4">FAQs</a></div>
-                                        <div class="margin-link--nav"><a href="https://www.flowngrow.io/#mobile-testimonials" id="testimonials" class="text-link-nav-4">Reviews</a></div>
-                                        <div class="margin-link--nav"><a href="https://billing.stripe.com/p/login/14k4ju1pz7R86Gc7ss" target="_blank" class="text-link-nav-4">Client Login</a></div>
-                                    </div>
-                                    <div class="professional-partner-nav-2"><img src="./index_files/65249b89ae6722e7222e691c_Professional-Wrapper.png" loading="lazy" alt="" class="image-12">
-                                        <div class="text-size-18-2 is-center-align">49.1579° N 121.9515° W<br>British Columbia, Canada 🇨🇦</div>
-                                    </div>
-                                </div>
-                            </nav>
+                            <a href="/" data-w-id="6ebb740b-e85a-4c1b-8423-da03142d788f" aria-current="page" class="brand w-nav-brand w--current" aria-label="home">
+                                <img src="./index_files/icon.png" loading="lazy" alt="" class="nav-logo-5">
+                            </a>
+
                             <div id="menu-trigger" fs-scrolldisable-element="smart-nav" fs-scrolldisable-media="max-width: 912px" data-w-id="6ebb740b-e85a-4c1b-8423-da03142d78ba" class="menu-btn w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0"
                                 aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
                                 <div data-is-ix2-target="1" class="lottie-animation-tablet" data-w-id="6ebb740b-e85a-4c1b-8423-da03142d78bd" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/6618fd0feee002c8406a6eb6_Hamburger%20Menu%20%20(1).json"
-                                    data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0.6" data-duration="0" data-ix2-initial-state="0"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 146 146" width="146" height="146" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clippath id="__lottie_element_25"><rect width="146" height="146" x="0" y="0"></rect></clippath><clippath id="__lottie_element_27"><path d="M0,0 L146,0 L146,146 L0,146z"></path></clippath></defs><g clip-path="url(#__lottie_element_25)"><g clip-path="url(#__lottie_element_27)" transform="matrix(1,0,0,1,24,51)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><path fill="rgb(0,0,0)" fill-opacity="1" d=" M99,0 C99,0 99,12 99,12 C99,12 0,12 0,12 C0,12 0,0 0,0 C0,0 99,0 99,0z"></path></g><g transform="matrix(1,0,0,1,0,31)" opacity="1" style="display: block;"><path fill="rgb(0,0,0)" fill-opacity="1" d=" M68,0 C68,0 68,12 68,12 C68,12 0,12 0,12 C0,12 0,0 0,0 C0,0 68,0 68,0z"></path></g></g></g></svg></div>
+                                    data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0.6" data-duration="0" data-ix2-initial-state="0"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 146 146" width="146" height="146" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_25"><rect width="146" height="146" x="0" y="0"></rect></clipPath><clipPath id="__lottie_element_27"><path d="M0,0 L146,0 L146,146 L0,146z"></path></clipPath></defs><g clip-path="url(#__lottie_element_25)"><g clip-path="url(#__lottie_element_27)" transform="matrix(1,0,0,1,24,51)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><path fill="rgb(0,0,0)" fill-opacity="1" d=" M99,0 C99,0 99,12 99,12 C99,12 0,12 0,12 C0,12 0,0 0,0 C0,0 99,0 99,0z"></path></g><g transform="matrix(1,0,0,1,0,31)" opacity="1" style="display: block;"><path fill="rgb(0,0,0)" fill-opacity="1" d=" M68,0 C68,0 68,12 68,12 C68,12 0,12 0,12 C0,12 0,0 0,0 C0,0 68,0 68,0z"></path></g></g></g></svg></div>
                             </div>
                         </div>
                     </div>
@@ -3131,72 +4509,38 @@
         </div>
         <div class="nav" style="will-change: transform;/* transform: translate3d(0px, 300%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */transform-style: preserve-3d;">
             <div class="nav_inner">
-                <a href="https://www.flowngrow.io/#section-process" class="nav_link w-inline-block">
-                    <div class="nav-link-text">How It Works</div>
+                <a href="#section-home-hero" class="nav_link w-inline-block">
+                    <div class="nav-link-text">Home</div>
                 </a>
-                <a href="https://www.flowngrow.io/#section-tech-stack" class="nav_link w-inline-block">
-                    <div class="nav-link-text">Services</div>
+                <a href="#models" class="nav_link w-inline-block">
+                    <div class="nav-link-text">Models</div>
                 </a>
-                <a href="https://www.flowngrow.io/#section-plans" class="nav_link w-inline-block">
+                <a href="#section-plans" class="nav_link w-inline-block">
                     <div class="nav-link-text">Pricing</div>
                 </a>
-                <a href="https://www.flowngrow.io/#section-benefits" class="nav_link w-inline-block">
-                    <div class="nav-link-text">Benefits</div>
+                <a href="#announcements" class="nav_link w-inline-block">
+                    <div class="nav-link-text">Announcements</div>
                 </a>
-                <a href="https://www.flowngrow.io/#section-faq" class="nav_link w-inline-block">
-                    <div class="nav-link-text">FAQs</div>
+                <a href="#about" class="nav_link w-inline-block">
+                    <div class="nav-link-text">About</div>
                 </a>
-                <a href="https://www.flowngrow.io/#section-testimonials" class="nav_link w-inline-block">
-                    <div class="nav-link-text">Reviews</div>
+
+                <a href="/" target="_blank" class="nav_link log-in w-inline-block">
+                    <div class="nav-link-text">Download</div>
                 </a>
-                <a href="https://billing.stripe.com/p/login/14k4ju1pz7R86Gc7ss" target="_blank" class="nav_link log-in w-inline-block">
-                    <div class="nav-link-text">Client Login</div>
-                </a>
-                <a href="https://www.flowngrow.io/#section-home-hero" data-w-id="914c6ef3-c131-c8cb-2394-a3bc7071ab74" class="nav_link _2 w-inline-block w--current">
-                    <div data-w-id="914c6ef3-c131-c8cb-2394-a3bc7071ab75" class="arrow-white-wrapper" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="./index_files/64d334263454c59f60325c7f_arrow.svg" loading="lazy" alt="Flow n&#39; Grow - Webflow Professional Partner, A monthly maintenance subscription service for Webflow template creators and existing website owners. Webflow Development, UX, UI, Design, Logo Design, UK, USA, Canada"
+                <a href="#section-home-hero" data-w-id="914c6ef3-c131-c8cb-2394-a3bc7071ab74" class="nav_link _2 w-inline-block w--current">
+                    <div data-w-id="914c6ef3-c131-c8cb-2394-a3bc7071ab75" class="arrow-white-wrapper" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="./index_files/64d334263454c59f60325c7f_arrow.svg" loading="lazy" alt="Flow n' Grow - Webflow Professional Partner, A monthly maintenance subscription service for Webflow template creators and existing website owners. Webflow Development, UX, UI, Design, Logo Design, UK, USA, Canada"
                             class="arrow-nav"></div>
-                    <div class="arrow-white-wrapper is-absolute" style="transform: translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="./index_files/64d334263454c59f60325c7f_arrow.svg" loading="lazy" alt="Flow n&#39; Grow - Webflow Professional Partner, A monthly maintenance subscription service for Webflow template creators and existing website owners. Webflow Development, UX, UI, Design, Logo Design, UK, USA, Canada"
+                    <div class="arrow-white-wrapper is-absolute" style="transform: translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="./index_files/64d334263454c59f60325c7f_arrow.svg" loading="lazy" alt="Flow n' Grow - Webflow Professional Partner, A monthly maintenance subscription service for Webflow template creators and existing website owners. Webflow Development, UX, UI, Design, Logo Design, UK, USA, Canada"
                             class="arrow-nav"></div>
                 </a>
             </div>
         </div>
         <main class="main-wrapper">
-            <div class="pop-up">
-                <div data-w-id="a2d8d632-2ed8-625d-634b-ffea2891eb54" style="opacity: 0;" class="contact-form-wrapper popup">
-                    <div class="form-block popup w-form">
-                        <form id="email-form-popup" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="65ade9cf063e092862c122eb" data-wf-element-id="a2d8d632-2ed8-625d-634b-ffea2891eb56" aria-label="Email Form"><label for="name-2" class="field-label">Name</label><label for="Name-3" class="field-label-2">Email Address</label><input class="contact-text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Your name" type="text"
-                                id="Name-3" required=""><input class="contact-text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Your email" type="email" id="Email-6" required=""><input class="contact-text-field w-input" maxlength="256"
-                                name="Template-Website-URL" data-name="Template/Website URL" placeholder="Your template / website URL" type="text" id="Template-Website-URL-3" required=""><textarea required="" placeholder="Message" maxlength="5000" id="Message-4"
-                                name="Message" data-name="Message" class="contact-text-field w-input"></textarea><input type="submit" data-wait="Please wait..." class="primary-button-m w-button" value="START FREE TRIAL" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></form>
-                        <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
-                            <div class="success-message-wrapper">
-                                <div class="icon-embed-custom w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 40 40" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
-  <path d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM16 30L6 20L8.82 17.18L16 24.34L31.18 9.16L34 12L16 30Z" fill="currentColor"></path>
-</svg></div>
-                                <div class="text-size-24">Thank you for taking that first step to giving us a try. You’ll see an onboarding email shortly with the next steps. <br><br>Happy Flowing.</div>
-                            </div>
-                        </div>
-                        <div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
-                            <div>Oops! Something went wrong while submitting the form.</div>
-                        </div>
-                    </div>
-                    <div fs-scrolldisable-element="enable" data-w-id="a11a73ab-e1c3-eac9-421f-5fa23fb5a107" class="close-btn">
-                        <div class="close-button-svg w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-  <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#1D1C18"></path>
-</svg></div>
-                    </div>
-                </div>
-                <div fs-scrolldisable-element="enable" data-w-id="752113dc-a7f3-2e96-7d94-4631ae7b20d0" class="pop-up-bg"></div>
-            </div>
+
             <section id="section-home-hero" data-w-id="af63030f-6f8e-d3ba-242a-3c3f87046e86" class="section-home-hero">
-                <div class="sun-animation-wrapper mobile">
-                    <div data-w-id="a0b03085-2c68-c75e-579d-39989ade5c9b" data-is-ix2-target="1" class="sun-animation-mobile" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/651b8b3e7db4f38d10b6ad1c_sunanimation%20-%20mobile.json"
-                        data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0" data-ix2-initial-state="0"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clippath id="__lottie_element_43"><rect width="1080" height="1920" x="0" y="0"></rect></clippath></defs><g clip-path="url(#__lottie_element_43)"><g transform="matrix(1,0,0,1,564,980)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1.1464999914169312,0,0,1.0170899629592896,0,0)"></g><g opacity="1" transform="matrix(1,0,0,1,-59,-255)"><path fill="rgb(29,28,24)" fill-opacity="1" d=" M0,-187 C103.2052993774414,-187 187,-103.2052993774414 187,0 C187,103.2052993774414 103.2052993774414,187 0,187 C-103.2052993774414,187 -187,103.2052993774414 -187,0 C-187,-103.2052993774414 -103.2052993774414,-187 0,-187z"></path></g></g><g transform="matrix(1,0,0,1,1360,1844)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1.1464999914169312,0,0,1.0170899629592896,0,0)"></g><g opacity="1" transform="matrix(1,0,0,1,-59,-255)"><path fill="rgb(218,214,201)" fill-opacity="1" d=" M0,-187 C103.2052993774414,-187 187,-103.2052993774414 187,0 C187,103.2052993774414 103.2052993774414,187 0,187 C-103.2052993774414,187 -187,103.2052993774414 -187,0 C-187,-103.2052993774414 -103.2052993774414,-187 0,-187z"></path></g></g></g></svg></div>
-                </div>
-                <div class="sun-animation-wrapper">
-                    <div data-w-id="bf3535ff-4d5e-a96e-98b4-55598d7eeeac" data-is-ix2-target="1" class="sun-animation" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/651b85f8a3255cf8caf3f3d1_sunanimation.json" data-loop="0"
-                        data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0" data-ix2-initial-state="0"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clippath id="__lottie_element_36"><rect width="1920" height="1080" x="0" y="0"></rect></clippath></defs><g clip-path="url(#__lottie_element_36)"><g transform="matrix(1,0,0,1,2272,1124)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1.1464999914169312,0,0,1.0170899629592896,0,0)"></g><g opacity="1" transform="matrix(1,0,0,1,-59,-255)"><path fill="rgb(29,28,24)" fill-opacity="1" d=" M0,-187 C103.2052993774414,-187 187,-103.2052993774414 187,0 C187,103.2052993774414 103.2052993774414,187 0,187 C-103.2052993774414,187 -187,103.2052993774414 -187,0 C-187,-103.2052993774414 -103.2052993774414,-187 0,-187z"></path></g></g><g transform="matrix(1,0,0,1,924,536)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1.1464999914169312,0,0,1.0170899629592896,0,0)"></g><g opacity="1" transform="matrix(1,0,0,1,-59,-255)"><path fill="rgb(218,214,201)" fill-opacity="1" d=" M0,-187 C103.2052993774414,-187 187,-103.2052993774414 187,0 C187,103.2052993774414 103.2052993774414,187 0,187 C-103.2052993774414,187 -187,103.2052993774414 -187,0 C-187,-103.2052993774414 -103.2052993774414,-187 0,-187z"></path></g></g></g></svg></div>
-                </div><img src="./index_files/664ee9850116129fe645a0df_Hero Bird.svg" loading="lazy" alt="" class="bird-hero is-2nd"><img src="./index_files/664ee98505e77c41eb18ff35_Hero Bird 2.svg" loading="lazy" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+
+                <img src="./index_files/664ee9850116129fe645a0df_Hero Bird.svg" loading="lazy" alt="" class="bird-hero is-2nd"><img src="./index_files/664ee98505e77c41eb18ff35_Hero Bird 2.svg" loading="lazy" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                     data-w-id="59e98de6-a39a-65f6-124e-75dcefb5eb92" alt="" class="bird-hero is-3rd">
                 <img src="./index_files/651a35ccb575d1272c05dea7_Sun.svg" loading="lazy" alt="" class="sun-hero"><img src="./index_files/651a35cb9cfb3be975d2cabb_Mountain-bottom.svg" loading="lazy" alt="" class="mountain-dark"><img src="./index_files/651a4a32f02abfc9283820c0_Mountain-light.svg"
                     loading="eager" alt="" class="mountain-light hero">
@@ -3207,21 +4551,23 @@
                 <div class="page-padding">
                     <div class="container-1352">
                         <div class="padding-section-large is--hero">
-                            <div class="fng-logo-wrapper"><img src="./index_files/65f3ac6d8a7f97bbb8dd41da_Flow N Grow logo.svg" loading="eager" alt="flow n grow logo" class="flow-n-grow-logo"></div>
+                            <div class="fng-logo-wrapper">
+                                <img src="./index_files/header.png" loading="eager" alt="flow n grow logo" class="flow-n-grow-logo"></div>
                             <div class="hero-header-component">
                                 <div class="home-hero-wrapper">
                                     <div id="w-node-_4beac65e-290f-fbd0-7761-667fc8362456-62c122eb" class="header26_content">
                                         <div data-w-id="a4e61107-0a87-de00-821b-935328631c46" class="heading-wrapper is-hero" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                            <h1 class="heading-60 text-color-black">Friends don’t let friends Webflow alone</h1>
+                                            <h1 class="heading-60 text-color-black">Tech - Powered <br> Innovations &amp; Products</h1>
                                         </div>
                                         <div data-w-id="d314b8f8-acda-6230-9fee-c545c2842285" class="subheadline-text-wrapper is-hero" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                            <h2 class="text-size-32 text-weight-normal">Team up with our lightning-fast Webflow developers to handle all the technical maintenance you don't want to touch.<br></h2>
+                                            <h2 class="text-size-32 text-weight-normal">Team up with our splendid ideas to handle all the technical objects you don't want to touch.<br></h2>
                                         </div>
-                                        <div class="rl-button-group-center"><a href="https://www.flowngrow.io/#section-plans" class="primary-button-m is-hero w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">VIEW&nbsp;PLANS</a>
-                                            <div data-w-id="09bd4094-7020-14a0-a26e-0365b2267f95" class="text-tag-orange margin-bottom-8" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">starting at Just $8 a day</div>
+                                        <div class="rl-button-group-center"><a href="#section-plans" class="primary-button-m is-hero w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">VIEW&nbsp;PLANS</a>
+                                            <div data-w-id="09bd4094-7020-14a0-a26e-0365b2267f95" class="text-tag-orange margin-bottom-8" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">NEW RELEASE!</div>
                                         </div>
                                     </div>
-                                    <div id="w-node-_6c57b92c-ea91-bd48-5971-563d392ddcc3-62c122eb" class="hero-right"><img src="./index_files/666bb21d3007e468dfce63a1_Webflow Professional Partner - 1.svg" loading="lazy" width="111" height="24" alt="Webflow Professional Partner Badge" class="webflow-professional-img is-hero">
+                                    <div id="w-node-_6c57b92c-ea91-bd48-5971-563d392ddcc3-62c122eb" class="hero-right">
+
                                         <div class="hero-features-and-video-section-wrapper">
                                             <div data-w-id="d4b388c9-52fb-162e-30cf-e46eac2bf6db" class="feature-text-wrapper hero-section" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                                 <div class="check-feature-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon margin-top">
@@ -3234,8 +4580,8 @@
                                                     <p class="text-size-16 text-weight-medium">Pause or cancel anytime<br></p>
                                                 </div>
                                                 <div class="check-feature-wrapper margin-top-24"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon margin-top opacity-0">
-                                                    <a href="https://www.flowngrow.io/#" data-video-src="https://storage.googleapis.com/khula-internal-videos-v2/Flown_Grow.Medium.Subs.mp4" data-lightbox-toggle="true" data-w-id="cefabcf7-65e2-7a77-6793-fe366e3b78e5" class="play-video-wrapper w-inline-block w-lightbox"
-                                                        aria-label="open lightbox" aria-haspopup="dialog">
+                                                    <a href="/" data-video-src="https://storage.googleapis.com/khula-internal-videos-v2/Flown_Grow.Medium.Subs.mp4" data-lightbox-toggle="true" data-w-id="cefabcf7-65e2-7a77-6793-fe366e3b78e5" class="play-video-wrapper w-inline-block w-lightbox" aria-label="open lightbox"
+                                                        aria-haspopup="dialog">
                                                         <div class="text-size-20 text-weight-bold">Play video</div>
                                                         <div class="play-wrapper-v2"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 28" fill="none" class="play-button-v2 is-2nd" style="transform: translate3d(-1.8em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.400391 3.0915C0.400391 1.4488 2.18798 0.430234 3.60117 1.26768L22.0107 12.1771C23.3964 12.9982 23.3964 15.0036 22.0107 15.8247L3.60117 26.7341C2.18798 27.5715 0.400391 26.5529 0.400391 24.9102V3.0915Z" fill="currentColor"></path></svg>
                                                             <svg data-w-id="cefabcf7-65e2-7a77-6793-fe366e3b78eb" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 28" fill="none" class="play-button-v2" style="transform: translate3d(0em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -3255,58 +4601,37 @@
                                     </div>
                                 </div>
                                 <div data-w-id="4beac65e-290f-fbd0-7761-667fc8362463" class="moving-projects-wrapper margin-bottom-32" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                    <div data-w-id="9d3a0ca6-8458-08d1-b91a-53388d978363" class="template-showcase-wrapper">
-                                        <div class="template-showcase _1" style="will-change: transform; transform: translate3d(0%, 90%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="./index_files/65a633038cafd49cea760e30_LP.webp" loading="eager" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 54vw, (max-width: 991px) 42vw, (max-width: 1919px) 38vw, 30vw" alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a633038cafd49cea760e30_LP-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a633038cafd49cea760e30_LP-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a633038cafd49cea760e30_LP.webp 901w"
-                                                class="template-personal-training"><img src="./index_files/66554236bbd1dd127084e20e_Tzeachten Home.webp" loading="lazy" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 55vw, (max-width: 991px) 42vw, (max-width: 1919px) 38vw, 30vw"
-                                                alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/66554236bbd1dd127084e20e_Tzeachten%20Home-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/66554236bbd1dd127084e20e_Tzeachten%20Home-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/66554236bbd1dd127084e20e_Tzeachten%20Home-p-1080.webp 1080w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/66554236bbd1dd127084e20e_Tzeachten%20Home.webp 1554w"
-                                                class="template-luna-parker"><img src="./index_files/65a63303c5dccc864783b176_Homepage - New Clean &amp; Simple - V1 1.webp" loading="lazy" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 48vw, (max-width: 991px) 38vw, (max-width: 1919px) 35vw, 28vw"
-                                                alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303c5dccc864783b176_Homepage%20-%20New%20Clean%20%26%20Simple%20-%20V1%201-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303c5dccc864783b176_Homepage%20-%20New%20Clean%20%26%20Simple%20-%20V1%201-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303c5dccc864783b176_Homepage%20-%20New%20Clean%20%26%20Simple%20-%20V1%201.webp 901w"
-                                                class="template-design-partnership"></div>
-                                        <div class="template-showcase _2" style="will-change: transform; transform: translate3d(0%, -40%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="./index_files/65a63304a52043fdbab77be4_Liam.webp" loading="eager" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 51vw, (max-width: 991px) 40vw, (max-width: 1919px) 39vw, 31vw" alt=""
-                                                srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63304a52043fdbab77be4_Liam-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63304a52043fdbab77be4_Liam-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63304a52043fdbab77be4_Liam.webp 901w"
-                                                class="template-liam-portfolio"><img src="./index_files/6650ad0899d5947c79c01891_Bayntree Home.webp" loading="eager" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 52vw, (max-width: 991px) 40vw, (max-width: 1919px) 39vw, 31vw"
-                                                alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/6650ad0899d5947c79c01891_Bayntree%20Home-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/6650ad0899d5947c79c01891_Bayntree%20Home-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/6650ad0899d5947c79c01891_Bayntree%20Home-p-1080.webp 1080w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/6650ad0899d5947c79c01891_Bayntree%20Home.webp 1292w"
-                                                class="template-samantha-hartley"><img src="./index_files/65a63303a9fb6ec962d0b514_Jason Big.webp" loading="eager" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 49vw, (max-width: 1919px) 38vw, 30vw"
-                                                alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303a9fb6ec962d0b514_Jason%20Big-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303a9fb6ec962d0b514_Jason%20Big-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303a9fb6ec962d0b514_Jason%20Big.webp 901w"
-                                                class="template-jason"></div>
-                                        <div class="template-showcase _3" style="will-change: transform; transform: translate3d(0%, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="./index_files/65a63303134b825cfeaf57bc_Magnetic Big.webp" loading="eager" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 51vw, (max-width: 991px) 40vw, (max-width: 1919px) 37vw, 29vw"
-                                                alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303134b825cfeaf57bc_Magnetic%20Big-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303134b825cfeaf57bc_Magnetic%20Big-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a63303134b825cfeaf57bc_Magnetic%20Big.webp 901w"
-                                                class="template-magnetic-studio"><img src="./index_files/664f29f3df5b453c5140844d_Evoke-HR Homepage.webp" loading="eager" width="450.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 51vw, (max-width: 991px) 40vw, (max-width: 1919px) 37vw, 29vw"
-                                                alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/664f29f3df5b453c5140844d_Evoke-HR%20Homepage-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/664f29f3df5b453c5140844d_Evoke-HR%20Homepage-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/664f29f3df5b453c5140844d_Evoke-HR%20Homepage-p-1080.webp 1080w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/664f29f3df5b453c5140844d_Evoke-HR%20Homepage-p-1600.webp 1600w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/664f29f3df5b453c5140844d_Evoke-HR%20Homepage.webp 3084w"
-                                                class="template-plan-tool"><img src="./index_files/65a633049711988ea64c2e45_Home.webp" loading="eager" width="410.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 51vw, (max-width: 991px) 40vw, (max-width: 1919px) 37vw, 29vw"
-                                                alt="" srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a633049711988ea64c2e45_Home-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a633049711988ea64c2e45_Home-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/65a633049711988ea64c2e45_Home.webp 901w"
-                                                class="template-riverside"></div>
-                                    </div>
+
                                     <div class="black-bg"></div>
                                 </div>
                                 <div class="features-wrapper">
                                     <div class="hero-features-wrapper">
                                         <div id="w-node-d21176db-8140-40c1-b3f4-e63b44f8e24b-62c122eb" class="feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" alt="" class="img-full-width"></div>
                                         <div id="w-node-d7e420c8-acde-7e1b-7e9b-e33c042d4339-62c122eb" class="heading-wrapper max-width-100">
-                                            <div class="heading-32">Zero hidden fees</div>
+                                            <div class="heading-32">Lipsum</div>
                                         </div>
-                                        <p class="text-size-18 text-align-center">Unlimited requests. Unlimited revisions. One flat monthly fee. Starting as little as $8 per day.</p>
+                                        <p class="text-size-18 text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.</p>
                                     </div>
                                     <div class="hero-features-wrapper">
                                         <div id="w-node-_79937a58-c653-f4cd-ea19-b12d3e9688ce-62c122eb" class="feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" alt="" class="img-full-width"></div>
                                         <div id="w-node-_703b165d-297b-013a-ab1b-87dbe5cdadc9-62c122eb" class="heading-wrapper margin-0">
-                                            <div class="heading-32">Zero long-term contracts</div>
+                                            <div class="heading-32">Lipsum</div>
                                         </div>
-                                        <p class="text-size-18 text-align-center">Pause, downgrade, upgrade, or cancel at any time. No strings attached. </p>
+                                        <p class="text-size-18 text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.</p>
                                     </div>
                                     <div id="w-node-fee85822-0bff-c60e-6609-822fb6e06430-62c122eb" class="hero-features-wrapper">
                                         <div id="w-node-e4696089-ea09-e382-de11-4c0c9bbf14f1-62c122eb" class="feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" alt="" class="img-full-width"></div>
                                         <div class="heading-wrapper margin-0">
-                                            <div class="heading-32">Zero time chasing down freelancers</div>
+                                            <div class="heading-32">Lipsum</div>
                                         </div>
-                                        <p class="text-size-18 text-align-center">We’re a team of 10 full-time, full-stack Webflow Professional Experts.</p>
+                                        <p class="text-size-18 text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.</p>
                                     </div>
                                     <div class="hero-features-wrapper">
                                         <div id="w-node-_2d31bda0-552d-ad73-0aeb-0ae852f78759-62c122eb" class="feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" alt="" class="img-full-width"></div>
                                         <div class="heading-wrapper margin-0">
-                                            <div class="heading-32">Zero headaches or hassles</div>
+                                            <div class="heading-32">Lipsum</div>
                                         </div>
-                                        <p class="text-size-18 text-align-center">Get regular progress updates from a real human so you never wonder how many hours you have left.</p>
+                                        <p class="text-size-18 text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.</p>
                                     </div>
                                 </div>
                             </div>
@@ -3315,14 +4640,14 @@
                 </div>
             </section>
 
-            <section class="section-our-plans">
+            <section class="section-our-plans" id="models">
                 <div id="mobile-value-proposition" class="mobile-anchor plans"></div>
                 <div class="page-padding">
                     <div class="container-1352">
                         <div class="padding-section-120">
                             <div class="plans-header-wrapper is-home">
                                 <div class="heading-wrapper is-solutions">
-                                    <h3 class="heading-48 text-align-center">Flow n’ Grow™ vs. other solutions</h3>
+                                    <h3 class="heading-48 text-align-center">Digital Insight™ Voice Weights</h3>
                                 </div>
                             </div>
                             <div class="us-vs-them-table">
@@ -3332,110 +4657,110 @@
                                     </div>
                                     <div class="table-wrapper titles">
                                         <div class="title-table-content-wrapper first">
-                                            <div class="heading-20 text-weight-bold">Price</div>
+                                            <div class="heading-20 text-weight-bold">SoVITS_Low</div>
                                         </div>
                                         <div class="title-table-content-wrapper">
-                                            <div class="heading-20 text-weight-bold">Onboarding</div>
+                                            <div class="heading-20 text-weight-bold">SoVITS_High</div>
                                         </div>
                                         <div class="title-table-content-wrapper">
-                                            <div class="heading-20 text-weight-bold">Revisions</div>
+                                            <div class="heading-20 text-weight-bold">GPT_Low</div>
                                         </div>
                                         <div class="title-table-content-wrapper">
-                                            <div class="heading-20 text-weight-bold">Turnaround time</div>
+                                            <div class="heading-20 text-weight-bold">GPT_Medium</div>
                                         </div>
                                         <div class="title-table-content-wrapper">
-                                            <div class="heading-20 text-weight-bold">Resource / hiring</div>
+                                            <div class="heading-20 text-weight-bold">GPT_High</div>
                                         </div>
                                         <div class="title-table-content-wrapper">
-                                            <div class="heading-20 text-weight-bold">Service costs</div>
+                                            <div class="heading-20 text-weight-bold">Lipsum</div>
                                         </div>
                                         <div class="title-table-content-wrapper">
-                                            <div class="heading-20 text-weight-bold">Project manager</div>
+                                            <div class="heading-20 text-weight-bold">Lipsum</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="solutions">
                                     <div class="solutions-wrapper first">
                                         <div class="heading-wrapper margin-bottom-32">
-                                            <h4 class="heading-32 text-weight-bold text-align-center">Flow n’ Grow™</h4>
+                                            <h4 class="heading-32 text-weight-bold text-align-center">Lcw3</h4>
                                         </div>
                                         <div class="table-wrapper">
                                             <div class="table-content-wrapper first">
-                                                <div class="text-size-18 text-weight-medium">From $40 USD p/h</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Within 24 hours</div>
+                                                <div class="text-size-18 text-weight-medium">CNY￥</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Free &amp; unlimited</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">1-2 business days</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Flexible &amp; scalable</div>
+                                                <div class="text-size-18 text-weight-medium">CNY￥</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">$</div>
+                                                <div class="text-size-18 text-weight-medium">Lipsum</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Yes, always</div>
+                                                <div class="text-size-18 text-weight-medium">Lipsum</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="solutions-wrapper">
                                         <div class="heading-wrapper margin-bottom-32">
-                                            <h4 class="heading-32 text-weight-bold text-align-center">Freelancers</h4>
+                                            <h4 class="heading-32 text-weight-bold text-align-center">Lcw</h4>
                                         </div>
                                         <div class="table-wrapper">
                                             <div class="table-content-wrapper first">
-                                                <div class="text-size-18 text-weight-medium">From $80 USD p/h</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Weeks</div>
+                                                <div class="text-size-18 text-weight-medium">CNY￥</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Paid, but limited</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">2-4 weeks</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Fixed</div>
+                                                <div class="text-size-18 text-weight-medium">CNY￥</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">$$</div>
+                                                <div class="text-size-18 text-weight-medium">Lipsum</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">No</div>
+                                                <div class="text-size-18 text-weight-medium">Lipsum</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="solutions-wrapper">
                                         <div class="heading-wrapper margin-bottom-32">
-                                            <h4 class="heading-32 text-weight-bold text-align-center">Agencies</h4>
+                                            <h4 class="heading-32 text-weight-bold text-align-center">Mmy</h4>
                                         </div>
                                         <div class="table-wrapper">
                                             <div class="table-content-wrapper first">
-                                                <div class="text-size-18 text-weight-medium">From $200 p/h</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Months</div>
+                                                <div class="text-size-18 text-weight-medium">CNY￥</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Paid, but limited</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">4-6 weeks</div>
+                                                <div class="text-size-18 text-weight-medium">Free</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Scalable</div>
+                                                <div class="text-size-18 text-weight-medium">CNY￥</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">$$$$</div>
+                                                <div class="text-size-18 text-weight-medium">Lipsum</div>
                                             </div>
                                             <div class="table-content-wrapper">
-                                                <div class="text-size-18 text-weight-medium">Maybe</div>
+                                                <div class="text-size-18 text-weight-medium">Lipsum</div>
                                             </div>
                                         </div>
                                     </div>
@@ -3457,7 +4782,7 @@
                                         <h3 class="heading-48">Plans that scale with you</h3>
                                     </div>
                                     <div class="subheadline-text-wrapper is-tickets">
-                                        <div class="text-size-24 plans-subheading"><span class="tw1">Choose a monthly plan that fits your needs. No hiring, no contract, no surprises, cancel anytime.</span></div>
+                                        <div class="text-size-24 plans-subheading"><span class="tw1">Choose a permanent plan that fits your needs. No hiring, no contract, no surprises.</span></div>
                                         <div class="w-embed">
                                             <style>
                                                 [class*="tw1"] {
@@ -3469,7 +4794,7 @@
                                             <div class="arrow margin-right-20 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 23 28" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
 <path d="M22.1842 27.1537L11.33 19.8506L0.706787 27.4858L11.0276 0.292969L22.1842 27.1537Z" fill="currentColor"></path>
 </svg></div>
-                                            <div class="heading-32 text-weight-medium mobile-24"><span class="counter animated fadeIn">365</span> tickets completed &amp; counting</div>
+                                            <div class="heading-32 text-weight-medium mobile-24"><span class="counter animated fadeIn">0</span> tickets completed &amp; counting</div>
                                         </div>
                                     </div>
                                 </div>
@@ -3481,15 +4806,16 @@
                                             <div class="pricing-plan">
                                                 <div class="pricing_content">
                                                     <div class="pricing_content-top">
-                                                        <div class="text-size-18 margin-bottom-16 title"><em>Best For:</em> Ongoing Maintenance</div>
-                                                        <div class="heading-56 margin-bottom-8">5 Hours</div>
+                                                        <div class="text-size-18 margin-bottom-16 title"><em>Lipsum: </em>Lorem ipsum dolor sit amet</div>
+                                                        <div class="heading-56 margin-bottom-8">Lipsum</div>
                                                         <div class="price_divider margin-bottom-32"></div>
                                                         <div class="price-text-wrapper margin-bottom-32">
-                                                            <div id="w-node-badd3d38-fc73-7972-c5ea-e9e2d24e9fdd-62c122eb" class="heading-32 price">$249</div>
-                                                            <div id="w-node-_1b1d46fb-2b7c-28fe-2828-dc2b1a0051ed-62c122eb" class="dollar-text">USD</div>
-                                                            <div id="w-node-_60a516a5-39a0-291f-a10d-e4ee171fc570-62c122eb" class="text-size-20">per website, per month</div>
+                                                            <div id="w-node-badd3d38-fc73-7972-c5ea-e9e2d24e9fdd-62c122eb" class="heading-32 price">￥00</div>
+                                                            <div id="w-node-_1b1d46fb-2b7c-28fe-2828-dc2b1a0051ed-62c122eb" class="dollar-text">CNY</div>
+                                                            <div id="w-node-_60a516a5-39a0-291f-a10d-e4ee171fc570-62c122eb" class="text-size-20">lipsum</div>
                                                             <div id="w-node-_2f5d6577-8cdf-997e-ad96-8ae3baf6d19c-62c122eb" class="price-info-wrapper">
-                                                                <p id="w-node-b63aca73-7e72-7825-7042-893f4063dc33-62c122eb" class="text-size-20">Use your hours for small fixes or larger updates. We move fast and we'll track our time accordingly. <br><br>View our FAQ's below for examples on how to use your hours.</p>
+                                                                <p id="w-node-b63aca73-7e72-7825-7042-893f4063dc33-62c122eb" class="text-size-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.<br><br>Vestibulum gravida, nunc sit amet malesuada vestibulum, libero dolor
+                                                                    consectetur risus, ultrices dapibus justo ex sed ex.</p>
                                                             </div>
                                                         </div>
                                                         <div class="what-s-included">
@@ -3498,12 +4824,11 @@
                                                                 <div id="w-node-_953482b9-3df0-7558-df77-96ce8a5fed42-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                <div class="text-size-18 is-feature">One request at a time</div>
+                                                                <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
                                                                 <div class="more-info-wrapper">
                                                                     <div class="more-details-wrapper">
                                                                         <div class="more-info-text w-richtext">
-                                                                            <p>We will work through each request one at a time, however you can submit as many requests / tickets through as you want. They will go into a queue and we can prioritize them from
-                                                                                there.</p>
+                                                                            <p>In aliquet dui eget venenatis imperdiet. Suspendisse interdum mi massa, non lacinia tellus lobortis et. Sed quis consectetur ante. Morbi non pulvinar nunc.</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
@@ -3513,11 +4838,11 @@
                                                                 <div id="w-node-_953482b9-3df0-7558-df77-96ce8a5fed47-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                <div class="text-size-18 is-feature">Fast turnaround times</div>
+                                                                <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
                                                                 <div class="more-info-wrapper">
                                                                     <div class="more-details-wrapper">
                                                                         <div class="more-info-text w-richtext">
-                                                                            <p>We complete tasks typically within 48-72 hours. Depending on how big the task is, some might take slightly longer.</p>
+                                                                            <p>In aliquet dui eget venenatis imperdiet. Suspendisse interdum mi massa, non lacinia tellus lobortis et. Sed quis consectetur ante. Morbi non pulvinar nunc.</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
@@ -3526,16 +4851,16 @@
                                                                 </div>
                                                                 <div id="w-node-_953482b9-3df0-7558-df77-96ce8a5fed4c-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Dedicated Webflow developer</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_90788ba0-4de3-fa91-bf44-e3b645ad2bc4-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                            <div class="text-size-18 is-feature">Unlimited revisions</div>
+                                                            <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
                                                             <div class="more-info-wrapper">
                                                                 <div class="more-details-wrapper">
                                                                     <div class="more-info-text w-richtext">
-                                                                        <p>There is no limit when it comes to rounds of revisions. We will continue to do the QA and debugging until you are 100% satisfied.</p>
+                                                                        <p>In aliquet dui eget venenatis imperdiet. Suspendisse interdum mi massa, non lacinia tellus lobortis et. Sed quis consectetur ante. Morbi non pulvinar nunc.</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
@@ -3544,21 +4869,20 @@
                                                                 </div>
                                                                 <div id="w-node-_213d63a1-2623-a37c-f93b-2ace23cffb11-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Responsive development Desktop, Tablet &amp; Mobile</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_79e17547-c4be-7756-dccf-6d5dc71433c5-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">QA &amp; debugging with every update</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_1190930b-f853-76fc-ac2b-8093972a5400-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                    <div class="text-size-18 is-feature">Technical on-page SEO fundamentals</div>
+                                                    <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
                                                     <div class="more-info-wrapper">
                                                         <div class="more-details-wrapper">
                                                             <div class="more-info-text w-richtext">
-                                                                <p>Not only will we develop the site in Webflow to best practices but we also know how to add in all the SEO fundamentals so that your site has the best chance of ranking on Google SERP. We'll
-                                                                    help you with things like meta titles, descriptions, proper heading structure, Google Search Console, Robots.txt, sitemap, etc.</p>
+                                                                <p>In aliquet dui eget venenatis imperdiet. Suspendisse interdum mi massa, non lacinia tellus lobortis et. Sed quis consectetur ante. Morbi non pulvinar nunc.</p>
                                                             </div>
                                                         </div>
                                                         <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
@@ -3567,13 +4891,13 @@
                                                                 </div>
                                                                 <div id="w-node-b5975b00-e01a-5df7-e65d-44bbbbd12735-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Easy credit card payment</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="rl_pricing11_spacing-block-8"></div>
-                                                    <div class="pricing-cta-wrapper"><a href="https://manage.flowngrow.io/b/bIYeVp9iE2yI1O0eV3" target="_blank" class="primary-button-m is-bundles w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Sign up</a>
+                                                    <div class="pricing-cta-wrapper"><a href="/" target="_blank" class="primary-button-m is-bundles w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Sign up</a>
                                                         <div class="no-margin-left">
                                                             <div class="primary-text-link margin-left-24">
                                                                 <div class="cta-text-wrapper">
@@ -3590,15 +4914,16 @@
                                             <div class="pricing-plan">
                                                 <div class="pricing_content">
                                                     <div class="pricing_content-top">
-                                                        <div class="text-size-18 margin-bottom-16 title"><em>Best For:</em> Building Pages</div>
-                                                        <div class="heading-56 margin-bottom-8">10 Hours</div>
+                                                        <div class="text-size-18 margin-bottom-16 title"><em>Lipsum: </em>Lorem ipsum dolor sit amet</div>
+                                                        <div class="heading-56 margin-bottom-8">Lipsum</div>
                                                         <div class="price_divider margin-bottom-32"></div>
                                                         <div class="price-text-wrapper margin-bottom-32">
-                                                            <div id="w-node-_46caa2ee-d1f5-0bb8-8c59-72449dc2c783-62c122eb" class="heading-32 price">$449</div>
-                                                            <div id="w-node-_46caa2ee-d1f5-0bb8-8c59-72449dc2c785-62c122eb" class="dollar-text">USD</div>
-                                                            <div id="w-node-_46caa2ee-d1f5-0bb8-8c59-72449dc2c787-62c122eb" class="text-size-20">per website, per month</div>
+                                                            <div id="w-node-_46caa2ee-d1f5-0bb8-8c59-72449dc2c783-62c122eb" class="heading-32 price">￥00</div>
+                                                            <div id="w-node-_46caa2ee-d1f5-0bb8-8c59-72449dc2c785-62c122eb" class="dollar-text">CNY</div>
+                                                            <div id="w-node-_46caa2ee-d1f5-0bb8-8c59-72449dc2c787-62c122eb" class="text-size-20">lipsum</div>
                                                             <div id="w-node-_491ae83d-3e31-a680-69e7-931def43e870-62c122eb" class="price-info-wrapper">
-                                                                <p id="w-node-_491ae83d-3e31-a680-69e7-931def43e871-62c122eb" class="text-size-20">Use your hours for small fixes or larger updates. We move fast and we'll track our time accordingly. <br><br>View our FAQ's below for examples on how to use your hours.</p>
+                                                                <p id="w-node-_491ae83d-3e31-a680-69e7-931def43e871-62c122eb" class="text-size-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.<br><br>Vestibulum gravida, nunc sit amet malesuada vestibulum, libero dolor
+                                                                    consectetur risus, ultrices dapibus justo ex sed ex. </p>
                                                             </div>
                                                         </div>
                                                         <div class="what-s-included">
@@ -3607,86 +4932,56 @@
                                                                 <div id="w-node-_852fd03b-5589-6dcd-799f-5378a1680164-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">One request at a time</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>We will work through each request one at a time, however you can submit as many requests / tickets through as you want. They will go into a queue and we can prioritize
-                                                                                        them from there.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-_852fd03b-5589-6dcd-799f-5378a1680169-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Fast turnaround times</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>We complete tasks typically within 48-72 hours. Depending on how big the task is, some might take slightly longer.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-_852fd03b-5589-6dcd-799f-5378a168016e-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Dedicated Webflow developer</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_350879ce-ff2d-b298-9158-7c6d2cac4a93-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Unlimited revisions</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>There is no limit when it comes to rounds of revisions. We will continue to do the QA and debugging until you are 100% satisfied.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-ca70605a-cb8d-e104-372f-be017f9d6902-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Add static or CMS landing pages <span class="text-span-10">*recommended on this plan</span></div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet<span class="text-span-10">*recommended on this plan</span></div>
                                                                 </div>
                                                                 <div id="w-node-_852fd03b-5589-6dcd-799f-5378a1680173-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Responsive development Desktop, Tablet &amp; Mobile</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_852fd03b-5589-6dcd-799f-5378a1680178-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">QA &amp; debugging with every update</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_6c7a9b78-56a7-4f2c-0948-f9d73ea32f73-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Technical on-page SEO fundamentals</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>Not only will we develop the site in Webflow to best practices but we also know how to add in all the SEO fundamentals so that your site has the best chance of ranking
-                                                                                        on Google SERP. We'll help you with things like meta titles, descriptions, proper heading structure, Google Search Console, Robots.txt, sitemap, etc.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-_852fd03b-5589-6dcd-799f-5378a168017d-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Easy credit card payment</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="rl_pricing11_spacing-block-8"></div>
-                                                    <div class="pricing-cta-wrapper"><a href="https://manage.flowngrow.io/b/7sI6oTbqMgpyakw00a" target="_blank" class="primary-button-m is-bundles w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Sign up</a>
+                                                    <div class="pricing-cta-wrapper"><a href="/" target="_blank" class="primary-button-m is-bundles w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Sign up</a>
                                                         <div class="no-margin-left">
                                                             <div class="primary-text-link margin-left-24">
                                                                 <div class="cta-text-wrapper">
@@ -3703,15 +4998,16 @@
                                             <div class="pricing-plan">
                                                 <div class="pricing_content">
                                                     <div class="pricing_content-top">
-                                                        <div class="text-size-18 margin-bottom-16 title"><em>Best For: </em>Webflow Template Reskin</div>
-                                                        <div class="heading-56 margin-bottom-8">30 Hours</div>
+                                                        <div class="text-size-18 margin-bottom-16 title"><em>Lipsum: </em>Lorem ipsum dolor sit amet</div>
+                                                        <div class="heading-56 margin-bottom-8">Lipsum</div>
                                                         <div class="price_divider margin-bottom-32"></div>
                                                         <div class="price-text-wrapper margin-bottom-32">
-                                                            <div id="w-node-_5913a51e-bbd6-36a7-eb27-3510c3ec77c7-62c122eb" class="heading-32 price">$1249</div>
-                                                            <div id="w-node-_8c337f84-0031-a4d4-6c5a-ff510458365a-62c122eb" class="dollar-text">USD</div>
-                                                            <div id="w-node-_5913a51e-bbd6-36a7-eb27-3510c3ec77cb-62c122eb" class="text-size-20">per website, per month</div>
+                                                            <div id="w-node-_5913a51e-bbd6-36a7-eb27-3510c3ec77c7-62c122eb" class="heading-32 price">￥00</div>
+                                                            <div id="w-node-_8c337f84-0031-a4d4-6c5a-ff510458365a-62c122eb" class="dollar-text">CNY</div>
+                                                            <div id="w-node-_5913a51e-bbd6-36a7-eb27-3510c3ec77cb-62c122eb" class="text-size-20">lipsum</div>
                                                             <div id="w-node-a057a9b1-15da-456b-b1c5-798dee18deb0-62c122eb" class="price-info-wrapper">
-                                                                <p id="w-node-a057a9b1-15da-456b-b1c5-798dee18deb1-62c122eb" class="text-size-20">Use your hours for small fixes or larger updates. We move fast and we'll track our time accordingly. <br><br>View our FAQ's below for examples on how to use your hours.</p>
+                                                                <p id="w-node-a057a9b1-15da-456b-b1c5-798dee18deb1-62c122eb" class="text-size-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.<br><br>Vestibulum gravida, nunc sit amet malesuada vestibulum, libero dolor
+                                                                    consectetur risus, ultrices dapibus justo ex sed ex. </p>
                                                             </div>
                                                         </div>
                                                         <div class="what-s-included">
@@ -3720,127 +5016,73 @@
                                                                 <div id="w-node-e4f406a3-3158-28d7-24dd-43968e90e6b0-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">One request at a time</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>We will work through each request one at a time, however you can submit as many requests / tickets through as you want. They will go into a queue and we can prioritize
-                                                                                        them from there.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-e4f406a3-3158-28d7-24dd-43968e90e6b5-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Lightning fast turnaround times</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>We complete tasks typically within 24-28 hours. Depending on how big the task is, some might take slightly longer.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-e4f406a3-3158-28d7-24dd-43968e90e6ba-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Dedicated Webflow developer</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_788127b3-e0f7-08a2-f3db-5a49b2078e9c-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Unlimited revisions</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>There is no limit when it comes to rounds of revisions. We will continue to do the QA and debugging until you are 100% satisfied.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-_55f6409f-cb66-6d18-ce06-591731370429-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Completely reskin a template and make it your own</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>Find a template you like <a href="https://webflow.com/templates" target="_blank">here</a> from 2000+ templates and we'll help you reskin it, apply your branding, colours,
-                                                                                        copy, and content to make it unique and your own.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-d9ea46ce-9130-1cac-1ef2-b9c6e7b7b208-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Can choose components or sections from other templates</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>When we're reskinning your template, we don't have to stick to your current templates design. We can pull inspiration and ideas from other templates and build these into
-                                                                                        your template site and make it fit the theme and styling as you like.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-_47f96fee-2f30-a943-3e0a-19dc89700bdb-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">UI design suggestions &amp; advice</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>Our Founder has 7+ years experience in the creative industry and web design space. He'll be providing his eye-for-design and can help with design suggestions to ensure
-                                                                                        your website meets all the best UX/UI principles and standards to help close any design gaps your template or website might have.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-e4f406a3-3158-28d7-24dd-43968e90e6bf-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Responsive development Desktop, Tablet &amp; Mobile</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-e4f406a3-3158-28d7-24dd-43968e90e6c4-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">QA &amp; debugging with every update</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                                 <div id="w-node-_8db6f279-57a1-e48e-735c-5c4b1454d9c6-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
                                                                     <text class="scope-wrapper">
-                                                                        <div class="text-size-18 is-feature">Technical on-page SEO fundamentals</div>
-                                                                        <div class="more-info-wrapper">
-                                                                            <div class="more-details-wrapper">
-                                                                                <div class="more-info-text w-richtext">
-                                                                                    <p>Not only will we develop the site in Webflow to best practices but we also know how to add in all the SEO fundamentals so that your site has the best chance of ranking
-                                                                                        on Google SERP. We'll help you with things like meta titles, descriptions, proper heading structure, Google Search Console, Robots.txt, sitemap, etc.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="question-circle w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M140 180a12 12 0 1 1-12-12a12 12 0 0 1 12 12M128 72c-22.06 0-40 16.15-40 36v4a8 8 0 0 0 16 0v-4c0-11 10.77-20 24-20s24 9 24 20s-10.77 20-24 20a8 8 0 0 0-8 8v8a8 8 0 0 0 16 0v-.72c18.24-3.35 32-17.9 32-35.28c0-19.85-17.94-36-40-36m104 56A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-16 0a88 88 0 1 0-88 88a88.1 88.1 0 0 0 88-88"></path></svg></div>
-                                                                        </div>
+                                                                        <div class="text-size-18 is-feature">Lorem ipsum dolor sit amet</div>
+                                                                        
                                                                         </text>
                                                                 </div>
                                                                 <div id="w-node-e4f406a3-3158-28d7-24dd-43968e90e6c9-62c122eb" class="pricing_feature">
                                                                     <div class="rl_pricing11_feature-icon-wrapper"><img src="./index_files/65b9bc41a9f75d30bb63058b_Pricing-check.svg" loading="lazy" width="11" alt="" class="rl_pricing11_icon"></div>
-                                                                    <div class="text-size-18 is-left-align">Easy credit card payment</div>
+                                                                    <div class="text-size-18 is-left-align">Lorem ipsum dolor sit amet</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="rl_pricing11_spacing-block-8"></div>
-                                                    <div class="pricing-cta-wrapper"><a href="https://manage.flowngrow.io/b/bIY7sXeCY3CM2S48wI" target="_blank" class="primary-button-m is-bundles w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Sign Up</a>
+                                                    <div class="pricing-cta-wrapper"><a href="/" target="_blank" class="primary-button-m is-bundles w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Sign Up</a>
                                                         <div class="no-margin-left">
                                                             <div class="primary-text-link margin-left-24">
                                                                 <div class="cta-text-wrapper">
@@ -3867,18 +5109,19 @@
 
 
 
-            <section class="section-individual-testimonial">
+            <section class="section-individual-testimonial" id="about">
                 <div class="page-padding">
                     <div class="container-1064">
                         <div class="padding-section-120">
                             <div class="testimonial-wrapper">
-                                <div class="client-logo-container max-width-197"><img src="./index_files/65f29213663f317a7b503c4d_Urban Fig.svg" loading="lazy" alt="Tzeachten Logo" class="client-logo"></div>
-                                <h3 class="heading-40-bold text-align-center">“I love that I can be browsing my site on a weekend, come up with an idea that I want to change, easily send a request ticket, and know that the <span class="white-wrap">Flow 'n Grow</span> team will be on it!”</h3>
+                                <div class="client-logo-container max-width-197"><img src="./index_files/header.png" loading="lazy" alt="Tzeachten Logo" class="client-logo"></div>
+                                <h3 class="heading-40-bold text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.<span class="white-wrap">Vestibulum gravida, nunc sit amet malesuada vestibulum, libero dolor consectetur risus, ultrices dapibus justo ex sed ex. </span>In
+                                    aliquet dui eget venenatis imperdiet. Suspendisse interdum mi massa, non lacinia tellus lobortis et. Sed quis consectetur ante. Morbi non pulvinar nunc.</h3>
                                 <div class="testimonial-person flex-vertical">
-                                    <div class="testimonial-img max-64"><img src="./index_files/662fa2dd7bcfbdd1897b235e_Jete.webp" loading="lazy" alt="Jete Devisser portrait" class="img-full-width"></div>
+                                    <div class="testimonial-img max-64"><img src="./index_files/200.png" loading="lazy" alt="Jete Devisser portrait" class="img-full-width"></div>
                                     <div class="testimonial-person-wrapper">
-                                        <div class="text-size-24 text-testimonial">Jete Devisser</div>
-                                        <div class="text-size-20">Founder &amp; Photographer</div>
+                                        <div class="text-size-24 text-testimonial">Lorem Ipsum</div>
+                                        <div class="text-size-20">Maecenas &amp; Vestibulum</div>
                                     </div>
                                 </div>
                             </div>
@@ -3891,14 +5134,14 @@
 
 
 
-            <section id="section-news" class="section-news">
+            <section id="announcements" class="section-news">
                 <div class="page-padding">
                     <div class="container-1352">
                         <div class="padding-section-120 is-latest-news">
                             <div class="bundles-wrapper">
                                 <div class="heading-wrapper margin-bottom-56 flex">
-                                    <h3 data-w-id="b8e4062e-6d42-ab35-9bc9-629357eafb01" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="heading-48">Cool news</h3>
-                                    <p data-w-id="b8e4062e-6d42-ab35-9bc9-629357eafb03" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="text-size-24 margin-bottom-32 is-bundles">Exciting announcements from Flow n’ Grow<strong>™</strong>.</p>
+                                    <h3 data-w-id="b8e4062e-6d42-ab35-9bc9-629357eafb01" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="heading-48">Announcements</h3>
+                                    <p data-w-id="b8e4062e-6d42-ab35-9bc9-629357eafb03" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="text-size-24 margin-bottom-32 is-bundles">Exciting news from Digital Insight<strong>™</strong>.</p>
                                 </div>
                                 <div class="splide slider3 is-initialized splide--slide splide--ltr is-active" id="splide03">
                                     <div class="splide__arrows desktop-hide">
@@ -3911,11 +5154,11 @@
                                                 <div class="news-content-wrapper">
                                                     <div class="bundle-content-wrapper">
                                                         <div class="news-heading">
-                                                            <div class="heading-32 is-left-align">Hand-picked by Webflow</div>
-                                                            <div class="text-size-16 dates">Dec, 2023</div>
+                                                            <div class="heading-32 is-left-align">Lorem ipsum dolor sit amet</div>
+                                                            <div class="text-size-16 dates">Nov, 2024</div>
                                                         </div>
-                                                        <p class="text-size-18 is-left-align">Flow n’ Grow™ was chosen by Webflow as one of the first in fifteen companies in the world to join their new <strong>Webflow Template Services Program</strong> (WTSP). <br><br>Now, small business
-                                                            owners, who don’t have a large budget can afford to purchase a Webflow template and hire us to make it their own!</p>
+                                                        <p class="text-size-18 is-left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.<strong>Digital Insight Voice Program</strong> (DIVP). <br><br>Vestibulum gravida,
+                                                            nunc sit amet malesuada vestibulum, libero dolor consectetur risus, ultrices dapibus justo ex sed ex. </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3923,11 +5166,11 @@
                                                 <div class="news-content-wrapper">
                                                     <div class="bundle-content-wrapper">
                                                         <div class="news-heading">
-                                                            <div class="heading-32 is-left-align">Won Honorable Mention Award!</div>
-                                                            <div class="text-size-16 dates">Dec, 2023</div>
+                                                            <div class="heading-32 is-left-align">Lorem ipsum dolor sit amet</div>
+                                                            <div class="text-size-16 dates">Nov, 2024</div>
                                                         </div>
-                                                        <p class="text-size-18 is-left-align">We won a prestigious award <strong>"Honorable Mention"</strong> on <strong>Awwwards.</strong> This special honor is given to websites that achieve a high score voted by a jury comprising of some
-                                                            of the best website designers in the world. <br><br>We feel proud to have a beautiful Webflow website custom-designed by us!</p>
+                                                        <p class="text-size-18 is-left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.<br><br>Vestibulum gravida, nunc sit amet malesuada vestibulum, libero dolor consectetur
+                                                            risus, ultrices dapibus justo ex sed ex. </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3948,9 +5191,9 @@
                         <div class="padding-section-120 is-cta">
                             <div class="border-card">
                                 <div class="heading-wrapper margin-bottom-56">
-                                    <h3 class="heading-48 text-align-center">Get unlimited, expert Webflow development services for less than hiring freelancers, full-time developers, or overpriced agencies.</h3>
+                                    <h3 class="heading-48 text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tempor ex. Maecenas maximus eleifend placerat.</h3>
                                 </div>
-                                <div class="cta-buttons-wrapper is-cta" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><a href="https://www.flowngrow.io/#section-plans" class="primary-button-s text-size-24 margin-right-24-mobile-0 w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">get started</a>
+                                <div class="cta-buttons-wrapper is-cta" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><a href="/" class="primary-button-s text-size-24 margin-right-24-mobile-0 w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">get started</a>
                                     <div class="primary-text-link">
                                         <div class="cta-text-wrapper">
                                             <div class="calendly">Request a demo</div>
@@ -3981,20 +5224,18 @@
                 <div class="container-1352">
                     <div class="padding-section-120 is-footer">
                         <div class="section-footer-components">
-                            <a href="https://www.flowngrow.io/" aria-current="page" class="w-inline-block w--current">
-                                <div class="footer-logo margin-bottom-80"><img src="./index_files/64f8fd77e47288ddec06c061_Flow n&#39; Grow - A sub-division of KHULA.webp" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1919px) 89vw, 1352px"
-                                        srcset="https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/64f8fd77e47288ddec06c061_Flow%20n%27%20Grow%20-%20A%20sub-division%20of%20KHULA-p-500.webp 500w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/64f8fd77e47288ddec06c061_Flow%20n%27%20Grow%20-%20A%20sub-division%20of%20KHULA-p-800.webp 800w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/64f8fd77e47288ddec06c061_Flow%20n%27%20Grow%20-%20A%20sub-division%20of%20KHULA-p-1080.webp 1080w, https://cdn.prod.website-files.com/64d1c3ea445c8af25080401f/64f8fd77e47288ddec06c061_Flow%20n%27%20Grow%20-%20A%20sub-division%20of%20KHULA.webp 2704w"
-                                        alt="Flow N Grow Logo" class="image-2"></div>
+                            <a href="/" aria-current="page" class="w-inline-block w--current">
+                                <div class="footer-logo margin-bottom-80"><img src="./index_files/footer.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1919px) 89vw, 1352px" srcset="" alt="Flow N Grow Logo" class="image-2"></div>
                             </a>
                             <div class="divider-line margin-bottom-40"></div>
                             <div class="footer-link-wrapper">
-                                <div class="text-size-18 text-color-white is-footer">49.1579° N 121.9515° W BC, Canada 🇨🇦</div>
-                                <div class="professional-wrapper"><img src="./index_files/65382fae63be958ad46b1e9a_Flow n&#39; Grow - Webflow Partner.svg" loading="lazy" alt="Webflow Professional Partner Badge" class="webflow-professional-img is-footer"></div>
+                                <div class="text-size-18 text-color-white is-footer">00.0000° N 000.0000° W , China CN</div>
+                                <div class="professional-wrapper"><img src="./index_files/header.png" loading="lazy" alt="" class="webflow-professional-img is-footer"></div>
                                 <div class="footer-links">
-                                    <div class="footer-link-container"><a href="https://www.linkedin.com/company/flow-n-grow%E2%84%A2" target="_blank" class="text-size-18 text-color-white link">LinkedIn</a>
+                                    <div class="footer-link-container"><a href="/" target="_blank" class="text-size-18 text-color-white link">LinkedIn</a>
                                         <div class="hover-underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"></div>
                                     </div>
-                                    <div class="footer-link-container"><a href="mailto:support@flowngrow.io?subject=Flow%20n%27%20Grow%20Enquiry%2FQuestion%3F" class="text-size-18 text-color-white link">Email Support</a>
+                                    <div class="footer-link-container"><a href="mailto:@.?subject=" class="text-size-18 text-color-white link">Email Support</a>
                                         <div class="hover-underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"></div>
                                     </div>
                                 </div>
@@ -4003,11 +5244,10 @@
                         <div class="footer-bottom-wrapper">
                             <div class="footer-illustrator-wrapper _2nd">
                                 <div class="khula-wrapper">
-                                    <div class="footer-copy-text">© <span class="year">2024</span> Flow n’ Grow™. <a href="https://www.flowngrow.io/privacy-policy" class="footer-link footer-illustrator">Privacy Policy</a>. Powered by&nbsp;<a href="https://www.khula.studio/?utm_source=Flow+n+Grow+First+Nation&amp;utm_medium=Footer+Bug+Link&amp;utm_id=Flow+n+Grow+Footer+Tracking"
-                                            target="_blank" class="footer-link footer-illustrator">KHULA<strong>™</strong></a></div>
+                                    <div class="footer-copy-text">© <span class="year">2024</span> DIgital Insight™. <a href="/" class="footer-link footer-illustrator">Privacy Policy</a>. Powered by&nbsp;<a href="/" target="_blank" class="footer-link footer-illustrator">Netlify<strong>™</strong></a></div>
                                 </div>
                             </div>
-                            <div class="professional-wrapper tablet"><img src="./index_files/65382fae63be958ad46b1e9a_Flow n&#39; Grow - Webflow Partner.svg" loading="lazy" alt="Webflow Professional Partner Badge" class="webflow-professional-img is-footer"></div>
+                            <div class="professional-wrapper tablet"><img src="./index_files/65382fae63be958ad46b1e9a_Flow n' Grow - Webflow Partner.svg" loading="lazy" alt="Webflow Professional Partner Badge" class="webflow-professional-img is-footer"></div>
                         </div>
                     </div>
                 </div>
@@ -4065,7 +5305,7 @@
 
 
     <script src="./index_files/custom-video.js.download"></script>
-    <script src="./index_files/jquery.min.js.download"></script>
+    <script src="./index_files/jquery.min.js.download"></script><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
     <script src="./index_files/waypoints.min.js.download"></script>
     <script src="./index_files/jquery.counterup.min.js.download"></script>
     <!-- [Attributes by Finsweet] Disable scrolling -->
@@ -4120,10 +5360,10 @@
 
         }
         slider1();
-    </script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./index_files/saved_resource.html"></iframe>
+    </script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./index_files/saved_resource(1).html"></iframe>
 
     <!-- Include jQuery library -->
-    <script src="./index_files/jquery-3.6.0.min.js.download"></script>
+    <script src="./index_files/jquery-3.6.0.min.js.download"></script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./index_files/saved_resource(2).html"></iframe>
 
     <script>
         const body = document.body;
@@ -4303,7 +5543,13 @@
                 }
             });
         });
-    </script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./index_files/saved_resource(1).html"></iframe>
+    </script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./index_files/saved_resource(3).html"></iframe>
+
+
+
+
+
+
 
 
 
